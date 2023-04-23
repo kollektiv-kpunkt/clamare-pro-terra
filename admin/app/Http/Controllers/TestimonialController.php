@@ -50,9 +50,34 @@ class TestimonialController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
+        $image = $request->file('image');
+
         $id = Str::uuid()->toString();
-        $imageName = $id . '.' . $request->image->extension();
-        Storage::disk('public_uploads')->putFileAs('images/i/', $request->file('image'), $imageName);
-        return redirect()->route('testimonial.index', ['image' => $imageName]);
+        $imageName = $id . '.' . $image->extension();
+        Storage::disk('public_uploads')->putFileAs('images/i/', $image, $imageName);
+        $testimonialPath = public_path('uploads/images/testimonials/' . $id . '.png');
+        try {
+            $testimonial = Browsershot::url($_ENV["APP_URL"] . "/api/testimonial/display/" . $imageName)
+                ->ignoreHttpsErrors()
+                ->setNodeBinary('/usr/bin/node')
+                ->setNpmBinary('/usr/bin/npm')
+                ->windowSize(1920, 1920)
+                ->noSandbox()
+                ->waitUntilNetworkIdle()
+                ->save($testimonialPath);
+            $testimonialName = $id . '.png';
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+        // Storage::disk('public_uploads')->delete('images/i/' . $image);
+        return response()->download($testimonialPath, $testimonialName)->deleteFileAfterSend(true);
+    }
+
+    /**
+     * Test Form for testing if uploading an image works
+     */
+    public function testform()
+    {
+        return view('testimonials.testform');
     }
 }
