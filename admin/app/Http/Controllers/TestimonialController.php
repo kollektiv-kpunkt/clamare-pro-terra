@@ -38,7 +38,8 @@ class TestimonialController extends Controller
      */
     public function display()
     {
-        return view('testimonials.dispaly', ['image' => $_GET["image"]]);
+        $image = $_GET["image"] . '.' . $_GET["ext"];
+        return view('testimonials.dispaly', ['image' => $image]);
     }
 
     /**
@@ -57,7 +58,7 @@ class TestimonialController extends Controller
         Storage::disk('public_uploads')->putFileAs('images/i/', $image, $imageName);
         $testimonialPath = public_path('uploads/images/testimonials/' . $id . '.png');
         try {
-            $testimonial = Browsershot::url($_ENV["APP_URL"] . "/api/testimonial/display/?image=" . $imageName)
+            $testimonial = Browsershot::url($_ENV["APP_URL"] . "/api/testimonial/display/?image=" . $id . "&ext=" . $image->extension())
                 ->ignoreHttpsErrors()
                 ->setNodeBinary('/usr/bin/node')
                 ->setNpmBinary('/usr/bin/npm')
