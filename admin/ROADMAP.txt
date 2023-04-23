@@ -1,0 +1,4 @@
+TODO: Contact information on Meeting Points
+TODO: Meetingpoint view
+TODO: Public API routes for MPs
+TODO: Links for Meetingpoints (Chats, Events)

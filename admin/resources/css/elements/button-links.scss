@@ -1,0 +1,21 @@
+.rpc-button-link {
+
+    .rpc-button-link-text {
+        --text-color: theme('colors.indigo.600');
+        color: var(--text-color);
+
+        &.red {
+            --text-color: theme('colors.red.600');
+        }
+
+        &.green {
+            --text-color: theme('colors.green.600');
+        }
+
+        &.yellow {
+            --text-color: theme('colors.yellow.600');
+        }
+
+        @apply underline text-sm
+    }
+}

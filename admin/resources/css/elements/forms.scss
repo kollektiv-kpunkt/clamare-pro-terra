@@ -1,0 +1,28 @@
+form.cpt-form {
+    --columns: 2;
+    --gap: 2rem;
+    --width: calc((100% - (var(--gap) * (var(--columns) - 1))) / var(--columns));
+
+    @media (max-width: 1023px) {
+        --gap: 1rem;
+    }
+
+    @media (max-width: 767px) {
+        --columns: 1;
+        row-gap: var(--gap);
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--gap);
+    row-gap: calc(var(--gap) * 0.5);
+
+    .cpt-form-group {
+        width: var(--width);
+
+        &.fullwidth {
+            width: 100%;
+        }
+    }
+}

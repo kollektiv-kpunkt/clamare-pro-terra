@@ -1,0 +1,27 @@
+.cpt-alert {
+    --bg-color: theme('colors.indigo.100');
+    --text-color: theme('colors.indigo.900');
+    --border-color: theme('colors.indigo.400');
+
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25em;
+    color: var(--text-color);
+    padding: 1em;
+    line-height: 0.8;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+
+    &.red {
+        --bg-color: theme('colors.red.100');
+        --text-color: theme('colors.red.900');
+        --border-color: theme('colors.red.400');
+    }
+
+    &.green {
+        --bg-color: theme('colors.green.100');
+        --text-color: theme('colors.green.900');
+        --border-color: theme('colors.green.400');
+    }
+}

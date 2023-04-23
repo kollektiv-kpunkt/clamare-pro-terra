@@ -1,0 +1,26 @@
+.cpt-table {
+    overflow-x: auto;
+
+    @apply mt-6;
+
+    table {
+        width: 100%;
+
+        thead {
+            @apply bg-rose-50
+        }
+
+        th {
+            @apply text-left text-rose-600
+        }
+
+        td,
+        th {
+            @apply px-2 py-2
+        }
+
+        tr {
+            @apply border-b border-rose-100
+        }
+    }
+}
