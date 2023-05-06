@@ -24,5 +24,5 @@
 	import '../styles/app.scss';
 </script>
 
-<h1>Hello world</h1>
+<h1 class="text-accent text-4xl">Hello world2</h1>
 <p>Hello world</p>
