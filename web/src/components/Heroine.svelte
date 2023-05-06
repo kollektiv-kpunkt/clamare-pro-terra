@@ -14,6 +14,10 @@
 	let date;
 
 	onMount(() => {
+		startAni();
+	});
+
+	function startAni() {
 		setTimeout(() => {
 			background.animate([{ opacity: 0 }, { opacity: 1 }], {
 				duration: 450,
@@ -65,7 +69,7 @@
 				}, 1200 + i * 250);
 			});
 		}, 750);
-	});
+	}
 </script>
 
 <div class="cpt-heroine-wrapper">
@@ -75,28 +79,28 @@
 				<div class="cpt-heroine__visual-inner cpt-heroine__visual-inner--{$locale}">
 					<!-- svelte-ignore a11y-missing-attribute -->
 					<img
-						src="/images/visual/background.png"
+						src="/images/visual/background.webp"
 						role="presentation"
 						class="cpt-heroine__visual-inner__background"
 						bind:this={background}
 					/>
 					<!-- svelte-ignore a11y-missing-attribute -->
 					<img
-						src="/images/visual/flames_bg.png"
+						src="/images/visual/flames_bg.webp"
 						role="presentation"
 						class="cpt-heroine__visual-inner__flames_bg"
 						bind:this={flames_bg}
 					/>
 					<!-- svelte-ignore a11y-missing-attribute -->
 					<img
-						src="/images/visual/earth.png"
+						src="/images/visual/earth.webp"
 						role="presentation"
 						class="cpt-heroine__visual-inner__earth"
 						bind:this={earth}
 					/>
 					<!-- svelte-ignore a11y-missing-attribute -->
 					<img
-						src="/images/visual/flames_fg.png"
+						src="/images/visual/flames_fg.webp"
 						role="presentation"
 						class="cpt-heroine__visual-inner__flames_fg"
 						bind:this={flames_fg}
@@ -147,7 +151,7 @@
 				rgba(255, 255, 255, 1) calc(100% - 6rem),
 				rgba(255, 255, 255, 1) 100%
 			),
-			url('/images/visual/backdrop.png');
+			url('/images/visual/backdrop.webp');
 		background-size: 100%;
 		background-repeat: repeat;
 
