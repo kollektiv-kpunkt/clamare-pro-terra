@@ -24,5 +24,12 @@
 	import '../styles/app.scss';
 </script>
 
-<h1 class="text-accent text-4xl">Hello world6</h1>
-<p>Hello world</p>
+<main id="svelte-main-container">
+	<Heroine />
+	<Intro />
+	<Strikemap />
+	<SomeMaterial />
+	<FAQ />
+	<DetailSection />
+	<Footer />
+</main>
