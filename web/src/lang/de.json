@@ -1,0 +1,16 @@
+{
+    "heroine": {
+        "visual": {
+            "cta": "Jetzt<br>handeln.",
+            "title1": "Klima<br>demo",
+            "title2": "30.09<br>Bern",
+            "date": "Bollwerk<br>14:00"
+        },
+        "title" : "Nationale Klimademo in Bern am 30. September",
+        "content" : "Die katastrophalen Auswirkungen der Klimakrise werden immer deutlicher sichtbar. Um das Pariser Klimaabkommen noch einhalten zu können, müssen wir jetzt handeln. Am 30. September gehen wir deswegen gemeinsam für Klimagerechtigkeit auf die Strasse.",
+        "buttons" : {
+            "cta" : "Mitmachen",
+            "more" : "Mehr erfahren"
+        }
+    }
+}

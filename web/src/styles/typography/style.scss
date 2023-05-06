@@ -11,3 +11,37 @@ html {
         color: theme("colors.foreground");
     }
 }
+
+.cpt-text-highlight {
+    color: white;
+    background-color: var(--highlight-color);
+    width: fit-content;
+    padding: 0.1em 0;
+    box-shadow: 0.2em 0 0 var(--highlight-color), -0.2em 0 0 var(--highlight-color);
+    margin-left: 0.2em;
+    box-decoration-break: clone;
+    line-height: 1.2em !important;
+    display: inline;
+
+    --highlight-color: theme("colors.accent");
+
+    &--white {
+        --highlight-color: white;
+        color: theme("colors.accent");
+    }
+
+    &--wide {
+        line-height: 1.4em !important;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}

@@ -1,0 +1,47 @@
+{
+    "Mobile Style SM (639px)": {
+        "prefix": "ms-sm",
+        "body": [
+            "@media (max-width: 639px) {",
+            "\t$1",
+            "}"
+        ],
+        "description": "Mobile Style 639px"
+    },
+    "Mobile Style MD (767px)": {
+        "prefix": "ms-md",
+        "body": [
+            "@media (max-width: 767px) {",
+            "\t$1",
+            "}"
+        ],
+        "description": "Mobile Style 767px"
+    },
+    "Mobile Style LG (1023px)": {
+        "prefix": "ms-lg",
+        "body": [
+            "@media (max-width: 1023px) {",
+            "\t$1",
+            "}"
+        ],
+        "description": "Mobile Style 1023px"
+    },
+    "Mobile Style XL (1279px)": {
+        "prefix": "ms-xl",
+        "body": [
+            "@media (max-width: 1279px) {",
+            "\t$1",
+            "}"
+        ],
+        "description": "Mobile Style 1279px"
+    },
+    "Mobile Style 2XL (1535px)": {
+        "prefix": "ms-2xl",
+        "body": [
+            "@media (max-width: 1535px) {",
+            "\t$1",
+            "}"
+        ],
+        "description": "Mobile Style 1535px"
+    },
+}

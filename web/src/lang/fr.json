@@ -1,0 +1,16 @@
+{
+    "heroine": {
+        "visual": {
+            "cta": "Agir Ensemble<br>maintenant.",
+            "title1": "Manif<br>climat",
+            "title2": "30.09.<br>Berne",
+            "date": "Bollwerk<br>14:00"
+        },
+        "title": "Manifestation nationale pour le climat à Berne le 30 septembre",
+        "content": "Les conséquences catastrophiques de la crise climatique sont de plus en plus évidentes. Nous devons agir maintenant pour respecter l’Accord de Paris. C’est pourquoi nous descendrons dans la rue le 30 septembre pour réclamer la justice climatique.",
+        "buttons": {
+            "cta": "Participer",
+            "more": "Plus d'infos"
+        }
+    }
+}
