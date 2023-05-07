@@ -103,4 +103,13 @@ class MeetingPointController extends Controller
         ]);
         return back();
     }
+
+    /**
+     * API: Get all approved Meeting Points.
+     */
+    public function apiGet()
+    {
+        $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude")->where('approved', true)->get();
+        return response()->json($meetingPoints);
+    }
 }

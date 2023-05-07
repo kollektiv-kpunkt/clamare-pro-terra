@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\MeetingPointController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix("testimonial")->group(function() {
-    Route::get("display", [TestimonialController::class, 'display'])->name("testimonial.display");
-    Route::post('upload', [TestimonialController::class, 'upload'])->name('testimonial.upload');
-    Route::get("testform", [TestimonialController::class, 'testform'])->name("testimonial.testform");
-});
+Route::get("/meetingpoints", [MeetingPointController::class, "apiGet"]);

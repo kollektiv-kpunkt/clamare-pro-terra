@@ -30,7 +30,14 @@
             ],
             "cta": "Komm auch du mit uns am 30. September um 14:00 nach Bern! Gemeinsam werden wir an diesem Tag vom Bollwerk zum Bundesplatz laufen, Reden und Konzerte hören und lautstark Klimagerechtigkeit einfordern. Danach gibt es auf dem Bundesplatz noch Workshops, Infostände, leckeres Essen und vieles mehr. <b>Sei dabei!</b>"
         },
-        "shareurl" : "https://klimademo.ch",
-        "sharetext" : "Hoi 🙋\nAm 30. September findet in Bern wieder ein Mal eine grosse Klima-Demo statt. Ich geh hin, kommst du auch?"
+        "shareurl": "https://klimademo.ch",
+        "sharetext": "Hoi 🙋\nAm 30. September findet in Bern wieder ein Mal eine grosse Klima-Demo statt. Ich geh hin, kommst du auch?"
+    },
+    "strikemap": {
+        "title": "Demokarte",
+        "content": [
+            "Aus der ganzen Schweiz werden gemeinsame Anfahrten organisiert. Egal ob zu Fuss, mit dem Fahrrad oder mit dem Zug: auch du kannst ein Treffpunkt und eine Uhrzeit festlegen und dann gemeinsam mit anderen zur Demonstration nach Bern fahren.",
+            "Zudem kannst du auf dieser Karte alle Mobilisierungsevents, die du planst, eintragen, egal ob du Flyer verteilen gehst, einen Infostand machst oder ein öffentliches Plakatemalen für die Demonstration organisierst."
+        ]
     }
 }
