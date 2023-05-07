@@ -20,15 +20,6 @@
 					<p>{@html paragraph}</p>
 				{/each}
 			</div>
-			<div class="cpt-intro-content2 mt-10">
-				<p class="font-bold text-xl cpt-text-highlight">{$_('intro.content2.lead')}</p>
-				<ul class="list-disc ml-4 mt-4">
-					{#each $json('intro.content2.listitems') as item}
-						<li class="mt-2">{@html item}</li>
-					{/each}
-				</ul>
-				<p class="md:text-lg mt-4">{@html $_('intro.content2.cta')}</p>
-			</div>
 		</div>
 		<div class="hidden lg:block w-1/2">
 			<div class="cpt-intro-image-container">
@@ -36,6 +27,15 @@
 				<img src="/images/intro/image-1.webp" alt="Intro" class="cpt-intro-image" />
 			</div>
 		</div>
+	</div>
+	<div class="cpt-intro-content2 mt-10 md:mt-20 cpt-container cpt-container--small !px-0">
+		<p class="font-bold text-xl cpt-text-highlight">{$_('intro.content2.lead')}</p>
+		<ul class="list-disc ml-4 mt-4">
+			{#each $json('intro.content2.listitems') as item}
+				<li class="mt-2">{@html item}</li>
+			{/each}
+		</ul>
+		<p class="md:text-lg mt-4">{@html $_('intro.content2.cta')}</p>
 	</div>
 </Section>
 
