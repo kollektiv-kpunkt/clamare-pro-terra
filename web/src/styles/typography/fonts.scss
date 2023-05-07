@@ -1,13 +1,28 @@
+/*!
+* @package IcoFont
+* @version 1.0.1
+* @author IcoFont https://icofont.com
+* @copyright Copyright (c) 2015 - 2018 IcoFont
+* @license - https://icofont.com/license/
+*/
+@font-face {
+    font-family: IcoFont;
+    font-weight: 400;
+    font-style: Regular;
+    src: url("/fonts/icofont.woff2") format("woff2"), url("/fonts/icofont.woff") format("woff")
+}
+
+
 /**
 * Credits: Matthew Hinders-Anderson, https: //wehtt.am/./fonts/
 */
 
 @font-face {
     font-family: "Klima";
-    src: './fonts/klima-regular-web.eot' format('eot'),
-        './fonts/klima-regular-italic-web.ttf' format('truetype'),
-        './fonts/klima-regular-web.woff2' format('woff2'),
-        './fonts/klima-regular-italic-web.woff' format('woff');
+    src: url("/fonts/klima-regular-web.eot") format('eot'),
+        url("/fonts/klima-regular-web.ttf") format('truetype'),
+        url("/fonts/klima-regular-web.woff2") format('woff2'),
+        url("/fonts/klima-regular-web.woff") format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -15,10 +30,10 @@
 
 @font-face {
     font-family: "Klima";
-    src: './fonts/klima-medium-web.eot' format('eot'),
-        './fonts/klima-medium-italic-web.ttf' format('truetype'),
-        './fonts/klima-medium-web.woff2' format('woff2'),
-        './fonts/klima-medium-italic-web.woff' format('woff');
+    src: url("/fonts/klima-medium-web.eot") format('eot'),
+        url("/fonts/klima-medium-web.ttf") format('truetype'),
+        url("/fonts/klima-medium-web.woff2") format('woff2'),
+        url("/fonts/klima-medium-web.woff") format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -26,10 +41,10 @@
 
 @font-face {
     font-family: "Klima";
-    src: './fonts/klima-bold-web.eot' format('eot'),
-        './fonts/klima-bold-italic-web.ttf' format('truetype'),
-        './fonts/klima-bold-web.woff2' format('woff2'),
-        './fonts/klima-bold-italic-web.woff' format('woff');
+    src: url("/fonts/klima-bold-web.eot") format('eot'),
+        url("/fonts/klima-bold-web.ttf") format('truetype'),
+        url("/fonts/klima-bold-web.woff2") format('woff2'),
+        url("/fonts/klima-bold-web.woff") format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -37,10 +52,10 @@
 
 @font-face {
     font-family: "Klima";
-    src: './fonts/klima-ultra-web.eot' format('eot'),
-        './fonts/klima-ultra-italic-web.ttf' format('truetype'),
-        './fonts/klima-ultra-web.woff2' format('woff2'),
-        './fonts/klima-ultra-italic-web.woff' format('woff');
+    src: url("/fonts/klima-ultra-web.eot") format('eot'),
+        url("/fonts/klima-ultra-web.ttf") format('truetype'),
+        url("/fonts/klima-ultra-web.woff2") format('woff2'),
+        url("/fonts/klima-ultra-web.woff") format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -48,10 +63,10 @@
 
 @font-face {
     font-family: "Klima";
-    src: "./fonts/klima-regular-italic-web.eot" format("eot"),
-        "./fonts/klima-regular-italic-web.ttf" format("truetype"),
-        "./fonts/klima-regular-italic-web.woff2" format("woff2"),
-        "./fonts/klima-regular-italic-web.woff" format("woff");
+    src: url("/fonts/klima-regular-italic-web.eot") format("eot"),
+        url("/fonts/klima-regular-italic-web.ttf") format("truetype"),
+        url("/fonts/klima-regular-italic-web.woff2") format("woff2"),
+        url("/fonts/klima-regular-italic-web.woff") format("woff");
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -59,10 +74,10 @@
 
 @font-face {
     font-family: "Klima";
-    src: "./fonts/klima-medium-italic-web.eot" format("eot"),
-        "./fonts/klima-medium-italic-web.ttf" format("truetype"),
-        "./fonts/klima-medium-italic-web.woff2" format("woff2"),
-        "./fonts/klima-medium-italic-web.woff" format("woff");
+    src: url("/fonts/klima-medium-italic-web.eot") format("eot"),
+        url("/fonts/klima-medium-italic-web.ttf") format("truetype"),
+        url("/fonts/klima-medium-italic-web.woff2") format("woff2"),
+        url("/fonts/klima-medium-italic-web.woff") format("woff");
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -70,10 +85,10 @@
 
 @font-face {
     font-family: "Klima";
-    src: "./fonts/klima-bold-italic-web.eot" format("eot"),
-        "./fonts/klima-bold-italic-web.ttf" format("truetype"),
-        "./fonts/klima-bold-italic-web.woff2" format("woff2"),
-        "./fonts/klima-bold-italic-web.woff" format("woff");
+    src: url("/fonts/klima-bold-italic-web.eot") format("eot"),
+        url("/fonts/klima-bold-italic-web.ttf") format("truetype"),
+        url("/fonts/klima-bold-italic-web.woff2") format("woff2"),
+        url("/fonts/klima-bold-italic-web.woff") format("woff");
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -81,10 +96,10 @@
 
 @font-face {
     font-family: "Klima";
-    src: "./fonts/klima-ultra-italic-web.eot" format("eot"),
-        "./fonts/klima-ultra-italic-web.ttf" format("truetype"),
-        "./fonts/klima-ultra-italic-web.woff2" format("woff2"),
-        "./fonts/klima-ultra-italic-web.woff" format("woff");
+    src: url("/fonts/klima-ultra-italic-web.eot") format("eot"),
+        url("/fonts/klima-ultra-italic-web.ttf") format("truetype"),
+        url("/fonts/klima-ultra-italic-web.woff2") format("woff2"),
+        url("/fonts/klima-ultra-italic-web.woff") format("woff");
     font-weight: 900;
     font-style: italic;
     font-display: swap;

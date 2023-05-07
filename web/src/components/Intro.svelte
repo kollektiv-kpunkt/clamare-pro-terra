@@ -1,4 +1,5 @@
 <script>
+	import Button from './Button.svelte';
 	import Section from './Section.svelte';
 
 	import { _, json } from 'svelte-i18n';
@@ -9,6 +10,29 @@
 	$: if (intersecting) {
 		element.classList.add('animate-fade-in-up');
 	}
+
+	function handleShare(platform) {
+		console.log('handleShare', platform);
+		let url = encodeURIComponent($_('intro.shareurl'));
+		let text = encodeURIComponent($_('intro.sharetext'));
+		switch (platform) {
+			case 'telegram':
+				url = `https://t.me/share/url?url=${url}&text=${text}`;
+				break;
+			case 'whatsapp':
+				url = `https://api.whatsapp.com/send?text=${text} ${url}`;
+				break;
+			case 'facebook':
+				url = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+				break;
+			case 'twitter':
+				url = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+				break;
+		}
+		window.open(url, '_blank');
+	}
+
+	const shareButtons = ['telegram', 'whatsapp', 'facebook', 'twitter'];
 </script>
 
 <Section>
@@ -36,6 +60,17 @@
 			{/each}
 		</ul>
 		<p class="md:text-lg mt-4">{@html $_('intro.content2.cta')}</p>
+		<div class="cpt-intro-share grid grid-cols-1 md:grid-cols-2 gap-2 mt-4 md:mt-6">
+			{#each shareButtons as button}
+				<Button
+					classes="{button}-button"
+					onClick={() => handleShare(button)}
+					href="#cpt-share-{button}"
+				>
+					Per {button} teilen
+				</Button>
+			{/each}
+		</div>
 	</div>
 </Section>
 

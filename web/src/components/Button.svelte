@@ -6,15 +6,28 @@
 	export let outline = false;
 	export let block = false;
 	export let type = 'button';
+	export let classes = '';
+	export let onClick = false;
 
 	let className = 'cpt-button';
 	className += ` cpt-button--${color}`;
 	className += ` cpt-button--${size}`;
 	className += ` cpt-button--${outline ? 'outline' : 'solid'}`;
 	className += ` cpt-button--${block ? 'block' : 'inline'}`;
+	className += ` ${classes}`;
 </script>
 
-{#if tag === 'a'}
+{#if onClick}
+	{#if tag === 'a'}
+		<a {href} class={className} on:click|preventDefault={onClick}>
+			<slot />
+		</a>
+	{:else if tag === 'button'}
+		<button {type} class={className} on:click|preventDefault={onClick}>
+			<slot />
+		</button>
+	{/if}
+{:else if tag === 'a'}
 	<a {href} class={className}>
 		<slot />
 	</a>

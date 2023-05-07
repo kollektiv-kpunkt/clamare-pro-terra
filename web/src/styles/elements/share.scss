@@ -1,0 +1,46 @@
+.cpt-intro-share {
+    .cpt-button {
+
+        background-color: var(--button-color);
+
+        &::after {
+            display: inline-flex;
+            content: var(--button-icon);
+            font-family: "IcoFont";
+            margin-left: 0.5rem;
+
+            &::after {
+                content: var(--button-icon);
+            }
+        }
+
+        &.telegram-button {
+            --button-color: #0088cc;
+            --button-icon: "\ed75";
+        }
+
+        &.twitter-button {
+            --button-color: #1da1f2;
+
+            &::after {
+                content: "\ed7a";
+            }
+        }
+
+        &.facebook-button {
+            --button-color: #3b5998;
+
+            &::after {
+                content: "\ed37";
+            }
+        }
+
+        &.whatsapp-button {
+            --button-color: #25d366;
+
+            &::after {
+                content: "\ed86";
+            }
+        }
+    }
+}
