@@ -38,6 +38,25 @@
         "content": [
             "Aus der ganzen Schweiz werden gemeinsame Anfahrten organisiert. Egal ob zu Fuss, mit dem Fahrrad oder mit dem Zug: auch du kannst ein Treffpunkt und eine Uhrzeit festlegen und dann gemeinsam mit anderen zur Demonstration nach Bern fahren.",
             "Zudem kannst du auf dieser Karte alle Mobilisierungsevents, die du planst, eintragen, egal ob du Flyer verteilen gehst, einen Infostand machst oder ein öffentliches Plakatemalen für die Demonstration organisierst."
-        ]
+        ],
+        "buttons": {
+            "meetingpoint": "Treffpunkt organisieren",
+            "event": "Mobilisierungsevent organisieren"
+        }
+    },
+    "somematerial": {
+        "title": "Hilf mit beim mobilisieren!",
+        "content": [
+            "Damit am 30. September zahlreiche Menschen gemeinsam auf der Strasse stehen, braucht es eure Unterstützung: mobilisiert auf euren Sozialen Medien, geht Flyer verteilen, eine kleine Mobilisierugnsaktion machen, ein Infostand aufstellen oder redet mit euren Freund*innen und Familienmitglieder über die Demonstration.",
+            "<b>Erstelle dein eigenes Profilbild oder lade unsere Vorlagen herunter!</b>"
+        ],
+        "buttons": {
+            "profilepicture": "Profilbild erstellen",
+            "downloadmedia": "Vorlagen herunterladen"
+        },
+        "instructions": "Lade hier ein Bild von dir hoch, damit wir dir dein Profilbild mit dem Klimademo-Logo erstellen können. Du kannst es dann direkt auf Facebook oder Twitter hochladen.",
+        "filehere": "Datei hier ablegen",
+        "or": "oder",
+        "success": "Dein Profilbild wurde erfolgreich erstellt!"
     }
 }

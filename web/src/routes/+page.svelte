@@ -14,7 +14,6 @@
 	import Intro from '../components/Intro.svelte';
 	import Logos from '../components/Logos.svelte';
 	import Strikemap from '../components/Strikemap.svelte';
-    import Test from '../components/Test.svelte';
 	import SomeMaterial from '../components/SomeMaterial.svelte';
 	import FAQ from '../components/FAQ.svelte';
 	import DetailSection from '../components/DetailSection.svelte';
@@ -35,5 +34,6 @@
 	<SomeMaterial />
 	<FAQ />
 	<DetailSection />
+	<div style="height: 50vh" />
 	<Footer />
 </main>

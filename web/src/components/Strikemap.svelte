@@ -109,7 +109,7 @@
 					</LeafletMap>
 				{/if}
 			</div>
-			<div class="text-center mt-10">
+			<div class="text-center mt-10 pb-10">
 				{#if popup.visible == true}
 					<div class="p-4 bg-accent text-white mb-8 relative">
 						<h3 class="text-2xl">{popup.title}</h3>
@@ -121,7 +121,12 @@
 				{#each $json('strikemap.content') as content}
 					<p>{content}</p>
 				{/each}
-				<Button href="/create-event" classes="block mt-5">Event organisieren</Button>
+				<Button href="https://strikemap.kpunkt.ch/create/meetingpoint" classes="!block mt-5"
+					>{$_('strikemap.buttons.meetingpoint')}</Button
+				>
+				<Button href="https://strikemap.kpunkt.ch/create/event" color="white" classes="!block mt-1"
+					>{$_('strikemap.buttons.event')}</Button
+				>
 			</div>
 		</div>
 	</div>
