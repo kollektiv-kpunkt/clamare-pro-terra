@@ -6,11 +6,29 @@
             "title2": "30.09<br>Bern",
             "date": "Bollwerk<br>14:00"
         },
-        "title" : "Nationale Klimademo in Bern am 30. September",
-        "content" : "Die katastrophalen Auswirkungen der Klimakrise werden immer deutlicher sichtbar. Um das Pariser Klimaabkommen noch einhalten zu können, müssen wir jetzt handeln. Am 30. September gehen wir deswegen gemeinsam für Klimagerechtigkeit auf die Strasse.",
-        "buttons" : {
-            "cta" : "Mitmachen",
-            "more" : "Mehr erfahren"
+        "title": "Nationale Klimademo in Bern am 30. September",
+        "content": "Die katastrophalen Auswirkungen der Klimakrise werden immer deutlicher sichtbar. Um das Pariser Klimaabkommen noch einhalten zu können, müssen wir jetzt handeln. Am 30. September gehen wir deswegen gemeinsam für Klimagerechtigkeit auf die Strasse.",
+        "buttons": {
+            "cta": "Mitmachen",
+            "more": "Mehr erfahren"
+        }
+    },
+    "intro": {
+        "title": "Jetzt handeln!",
+        "content": [
+            "Viele Jahre lang hat die Klimabewegung schon versucht unsere Regierung, Schweizer Banken, klimazerstörerische Grosskonzerne und andere grosse Emittenten dazu zu bringen, effektive Klimaschutzmassnahmen zu ergreifen.",
+            "Die Klimabewegung hat bei vielen zu einem Umdenken geführt. Mutige Menschen probieren neue Wege aus und in vielen Branchen werden klimaverträgliche Lösungen gesucht und gefunden. Doch es passiert noch viel zu wenig und die Zeit für vorsichtige Schritte ist abgelaufen! Nun wollen wir endlich Taten sehen.",
+            "<b>Wir werden laut sein, bis wir in einer klimagerechten Gesellschaft leben. Denn aufzugeben und nichts zu machen ist ein Privileg, das viele Menschen, die bereits heute unter der Klimakrise leiden, nicht haben.</b>"
+        ],
+        "content2": {
+            "lead": "Deshalb gehen wir am 30. September wieder gemeinsam auf die Strasse!",
+            "listitems": [
+                "Wir fordern <b>sofortigen Klimaschutz!</b>",
+                "Wir fordern <b>Klimagerechtigkeit!</b>",
+                "Wir fordern, dass <b>die grössten Verursacher*innen der Klimakrise ihre Verantwortung wahrnehmen!</b>",
+                "Wir fordern, dass <b>die Politik dem Klimaschutz endlich Priorität gibt!</b>"
+            ],
+            "cta": "Komm auch du mit uns am 30. September um 14:00 nach Bern! Gemeinsam werden wir an diesem Tag vom Bollwerk zum Bundesplatz laufen, Reden und Konzerte hören und lautstark Klimagerechtigkeit einfordern. Danach gibt es auf dem Bundesplatz noch Workshops, Infostände, leckeres Essen und vieles mehr. <b>Sei dabei!</b>"
         }
     }
 }

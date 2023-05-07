@@ -133,7 +133,7 @@
 							{$_('heroine.content')}
 						</p>
 					</div>
-					<div class="mt-8 flex flex-col lg:flex-row gap-4">
+					<div class="mt-8 flex flex-col lg:flex-row gap-x-4 gap-y-2">
 						<Button href="#support">{$_('heroine.buttons.cta')}</Button>
 						<Button color="outline" href="#more-info">{$_('heroine.buttons.more')}</Button>
 					</div>
@@ -155,6 +155,10 @@
 		background-size: 100%;
 		background-repeat: repeat;
 
+		@media (max-width: 767px) {
+			background-image: url('/images/visual/backdrop.webp');
+		}
+
 		.cpt-heroine {
 			&-inner {
 				display: flex;
@@ -166,11 +170,11 @@
 			&__visual {
 				width: calc(50% - 2rem);
 				@apply drop-shadow-xl;
-				overflow: hidden;
 				@media (max-width: 767px) {
 					width: 100%;
 				}
 				&-inner {
+					overflow: hidden;
 					width: 100%;
 					aspect-ratio: 3 / 4;
 					position: relative;
@@ -294,6 +298,10 @@
 
 				&__inner {
 					padding-bottom: 8rem;
+
+					@media (max-width: 767px) {
+						padding-bottom: 2rem;
+					}
 				}
 			}
 		}
