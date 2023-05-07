@@ -30,7 +30,7 @@
 	});
 
 	onMount(async () => {
-		const response = await fetch('https://cpt-admin.ddev.site/api/meetingpoints');
+		const response = await fetch('https://strikemap.kpunkt.ch/api/meetingpoints');
 		const data = await response.json();
 		addMeetingpoints(data);
 	});
