@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import Section from './Section.svelte';
 	import Button from './Button.svelte';
-	import { _, json } from 'svelte-i18n';
+	import { _, json, locale } from 'svelte-i18n';
 	import domtoimage from 'dom-to-image';
 
 	let images = [];
@@ -14,7 +14,7 @@
 	let pfpDOM;
 
 	onMount(async () => {
-		images = await fetch('/api/profilepictures').then((res) => res.json());
+		images = await fetch('/api/profilepictures?locale=' + $locale).then((res) => res.json());
 		images = images.pics;
 	});
 
@@ -122,7 +122,7 @@
 				<div class="cpt-pfp-blind" />
 				<!-- svelte-ignore a11y-missing-attribute -->
 				<img
-					src="/images/profilepictures/skeleton.png"
+					src={`/images/profilepictures/skeleton-${$locale}.png`}
 					class="absolute w-full h-full object-cover"
 				/>
 			</div>
