@@ -387,6 +387,7 @@
 
 	.cpt-pfp-wrapper {
 		background-size: cover;
+		background-position: center center;
 		background-repeat: no-repeat;
 
 		.cpt-pfp-blind {
