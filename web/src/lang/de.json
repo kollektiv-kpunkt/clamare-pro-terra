@@ -87,5 +87,48 @@
                 "answer": "Um 14:00 Uhr treffen wir uns beim Bollwerk in Bern. Zusammen ziehen wir dann als Demonstration lautstark durch die Strassen von Bern bis auf den Bundesplatz. Dort wird es ein buntes Programm geben mit Reden, kreativen Beiträgen und tollen Konzerten. Die Künstler*innen werden noch bekannt gegeben. Nach der Demonstration geht es mit Workshops, Essen, Infoständen und kreativen Beiträgen weiter."
             }
         ]
+    },
+    "contact": {
+        "title": "Kontakt",
+        "formFields": [
+            {
+                "name": "name",
+                "label": "Wie lautet dein Name?",
+                "required": true
+            },
+            {
+                "name": "email",
+                "type": "email",
+                "label": "Und deine E-Mail Adresse?",
+                "required": true
+            },
+            {
+                "name": "message",
+                "type": "textarea",
+                "label": "Was möchtest du uns mitteilen?",
+                "required": true
+            },
+            {
+                "name": "optin",
+                "type": "checkbox",
+                "label": "Ich bin einverstanden, dass die Klima-Demo mich auf dem Laufenden halten darf. <a href=\"https://www.klima-allianz.ch/datenschutzerklaerung/\" target=\"_blank\">Mehr Informationen zum Datenschutz.</a>",
+                "checked": true
+            }
+        ],
+        "send": "Absenden"
+    },
+    "donate": {
+        "title": "Spenden",
+        "content": "Wir sind dankbar über Spenden, um die Ausgaben für die Klimademo decken zu können. Bitte gebt bei den Spenden den Vermerk “Klimademo” an.",
+        "details": [
+            "<b>Unsere Kontoangaben:</b>",
+            "Alternative Bank Schweiz,",
+            "4601 Olten",
+            "Konto-Nr. 367.696.100-00",
+            "IBAN: CH41 0839 0036 7696 1000 0",
+            "BIC: ABSOCH22",
+            "Klima-Allianz Schweiz, Rue Fendt 1,",
+            "1201 Genf"
+        ]
     }
 }

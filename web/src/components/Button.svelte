@@ -1,5 +1,5 @@
 <script>
-	export const tag = 'a';
+	export let tag = 'a';
 	export let href = '#';
 	export let color = 'accent';
 	export let size = 'md';
@@ -27,11 +27,11 @@
 			<slot />
 		</button>
 	{/if}
-{:else if tag === 'a'}
+{:else if tag == 'a'}
 	<a {href} class={className}>
 		<slot />
 	</a>
-{:else if tag === 'button'}
+{:else if tag == 'button'}
 	<button {type} class={className}>
 		<slot />
 	</button>

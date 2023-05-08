@@ -5,7 +5,7 @@
 </script>
 
 <Section classNames="cpt-container cpt-container--large">
-	<div class="grid md:grid-cols-2">
+	<div class="grid md:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-12">
 		<ContactForm />
 		<Donate />
 	</div>
