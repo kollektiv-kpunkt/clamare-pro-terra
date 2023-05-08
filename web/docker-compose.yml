@@ -6,4 +6,5 @@ services:
     ports:
       - "3030:3000"
     volumes:
-      - ./data:/app/data
+      - ./src:/app/src
+      - ./static:/app/static

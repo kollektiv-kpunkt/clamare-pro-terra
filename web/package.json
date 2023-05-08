@@ -33,7 +33,7 @@
     },
     "type": "module",
     "dependencies": {
-        "capture-website": "^3.2.0",
+        "dom-to-image": "^2.6.0",
         "svelte-i18n": "^3.6.0"
     }
 }

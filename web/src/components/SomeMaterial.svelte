@@ -3,8 +3,16 @@
 	import Section from './Section.svelte';
 	import Button from './Button.svelte';
 	import { _, json } from 'svelte-i18n';
+	import domtoimage from 'dom-to-image';
 
 	let images = [];
+	let loader = false;
+	let profilePicture = false;
+	let showForm = true;
+	let successMessage = false;
+	let successMessageDOM;
+	let pfpDOM;
+
 	onMount(async () => {
 		images = await fetch('/api/profilepictures').then((res) => res.json());
 		images = images.pics;
@@ -27,31 +35,46 @@
 		});
 	}
 
-	let loader = false;
-	let successMessage = false;
+	function getBase64(file) {
+		return new Promise((resolve, reject) => {
+			const reader = new FileReader();
+			reader.readAsDataURL(file);
+			reader.onload = () => resolve(reader.result);
+			reader.onerror = (error) => reject(error);
+		});
+	}
 
 	async function createProfilepicture(event) {
 		if (event.target.files.length === 0) return;
 		loader = true;
-		const formData = new FormData();
-		formData.append('image', event.target.files[0]);
-		const res = await fetch('/api/profilepictures', {
-			method: 'POST',
-			enctype: 'multipart/form-data',
-			body: formData
+		profilePicture = true;
+		getBase64(event.target.files[0]).then((data) => {
+			pfpDOM.style.setProperty('background-image', "url('" + data + "'");
+			domtoimage.toPng(pfpDOM).then((dataUrl) => {
+				let a = document.createElement('a');
+				a.href = dataUrl;
+				a.download = event.target.files[0].name + '-demoprofilepicture.png';
+				a.click();
+				a.remove();
+				closeForm();
+				event.target.value = '';
+				successMessage = true;
+				profilePicture = false;
+				setTimeout(() => {
+					loader = false;
+					setTimeout(() => {
+						successMessageDOM.animate([{ opacity: 1 }, { opacity: 0 }], {
+							duration: 500,
+							easing: 'ease-in-out',
+							fill: 'forwards'
+						});
+						setTimeout(() => {
+							successMessage = false;
+						}, 500);
+					}, 2000);
+				}, 1000);
+			});
 		});
-		const data = await res.json();
-		let a = document.createElement('a');
-		a.href = data.url;
-		a.download = event.target.files[0].name + '-demopic.png';
-		a.click();
-		a.remove();
-		successMessage = true;
-		event.target.value = '';
-		closeForm();
-		setTimeout(() => {
-			loader = false;
-		}, 250);
 	}
 </script>
 
@@ -74,18 +97,41 @@
 		>
 	</div>
 
-	<div class="cpt-profilepicture-form" bind:this={profileForm}>
-		<div class="text-center pt-12 flex flex-col items-center">
-			<p>{$_('somematerial.instructions')}</p>
-			<label for="images" class="cpt-drop-container mt-4">
-				<span class="cpt-drop-title">{$_('somematerial.filehere')}</span>
-				{$_('somematerial.or')}
-				<input type="file" id="images" accept="image/*" required on:change={createProfilepicture} />
-			</label>
+	{#if showForm}
+		<div class="cpt-profilepicture-form" bind:this={profileForm}>
+			<div class="text-center pt-12 flex flex-col items-center">
+				<p>{$_('somematerial.instructions')}</p>
+				<label for="images" class="cpt-drop-container mt-4">
+					<span class="cpt-drop-title">{$_('somematerial.filehere')}</span>
+					{$_('somematerial.or')}
+					<input
+						type="file"
+						id="images"
+						accept="image/*"
+						required
+						on:change={createProfilepicture}
+					/>
+				</label>
+			</div>
 		</div>
-	</div>
+	{/if}
+	{#if profilePicture}
+		<div class="pfp-inner-wrapper max-w-md mx-auto">
+			<div class="cpt-pfp-wrapper aspect-square relative" bind:this={pfpDOM}>
+				<div class="cpt-pfp-blind" />
+				<!-- svelte-ignore a11y-missing-attribute -->
+				<img
+					src="/images/profilepictures/skeleton.png"
+					class="absolute w-full h-full object-cover"
+				/>
+			</div>
+		</div>
+	{/if}
 	{#if successMessage}
-		<div class="text-center mt-4 flex flex-col items-center p-4 bg-secondary">
+		<div
+			class="text-center mt-4 flex flex-col items-center p-4 bg-secondary"
+			bind:this={successMessageDOM}
+		>
 			<p>{$_('somematerial.success')}</p>
 		</div>
 	{/if}
@@ -215,7 +261,7 @@
 		justify-content: center;
 		align-items: center;
 		background-color: rgba(0, 0, 0, 0.5);
-		backdrop-filter: blur(4px);
+		backdrop-filter: blur(400px);
 		z-index: 9999;
 		color: white;
 		font-size: 3rem;
@@ -321,6 +367,27 @@
 			50% {
 				transform: scale(1.5);
 			}
+		}
+	}
+
+	.cpt-pfp-wrapper {
+		background-size: 110%;
+		background-position: bottom right;
+		background-repeat: no-repeat;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 1080px;
+		height: 1080px;
+
+		.cpt-pfp-blind {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: theme('colors.secondary');
+			mix-blend-mode: soft-light;
 		}
 	}
 </style>
