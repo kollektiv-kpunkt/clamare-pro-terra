@@ -58,5 +58,34 @@
         "filehere": "Datei hier ablegen",
         "or": "oder",
         "success": "Dein Profilbild wurde erfolgreich erstellt!"
+    },
+    "faq": {
+        "title": "Häufige Fragen",
+        "questions": [
+            {
+                "question": "Ist die Demo bewilligt?",
+                "answer": "Ja, die Demonstration ist bewilligt."
+            },
+            {
+                "question": "Wie zugänglich ist die Demonstration?",
+                "answer": "Dies können wir zum jetzigen Stand leider noch nicht beantworten, wir werden jedoch im August ein ausführliches Dokument dazu veröffentlichen. Wenn du aber jetzt schon konkrete Wünsche oder Fragen hast, zögere nicht, uns zu kontaktieren. Wir wollen die Demonstration so zugänglich wie möglich gestalten."
+            },
+            {
+                "question": "Wie organisiere ich eine gemeinsame Anfahrt mit dem Fahrrad an die Demonstration?",
+                "answer": "Streue deine Idee in deinem Umfeld oder via Soziale Medien, dann sucht ihr gemeinsam eine passende Route heraus und überlegt, wann und wo ihr losfahren müsst, was für Material ihr benötigt (Veloflickzeug, Erste Hilfe Set…). Danach könnt ihr versuchen, möglichst viele Menschen zu überzeugen mit euch an die Demonstration zu radeln. Wichtig: trag doch die Route auf der Website ein, so können sich andere Menschen dir einfach anschliessen. Für einen guten Fahrradparkplatz in Bern wird gesorgt. Der genaue Ort wird zu einem späteren Zeitpunkt kommuniziert."
+            },
+            {
+                "question": "Wie kann ich als Einzelperson die Demonstration unterstützen?",
+                "answer": "Am meisten Hilfe können wir bei der Mobilisierung gebrauchen. Beispielsweise könntest du Flyer verteilen, Grafiken auf den sozialen Netzwerken posten, ein Infostand aufstellen oder deine Mitschüler*innen davon überzeugen, an die Demonstration zu kommen."
+            },
+            {
+                "question": "Wie kann meine Organisation die Demonstration unterstützen?",
+                "answer": "Melde dich bei uns, so können wir individuell schauen, was für deine Organisation passt. Hilfe können wir immer bei der Mobilisierung gebrauchen. Zudem gibt es die Möglichkeit, nach der Demonstration ein “After Programm” mitzugestalten, z.B. ein Workshop organisieren, einen kreativen Beitrag machen oder ein Infostand aufstellen."
+            },
+            {
+                "question": "Was gibt es für Programmpunkte?",
+                "answer": "Um 14:00 Uhr treffen wir uns beim Bollwerk in Bern. Zusammen ziehen wir dann als Demonstration lautstark durch die Strassen von Bern bis auf den Bundesplatz. Dort wird es ein buntes Programm geben mit Reden, kreativen Beiträgen und tollen Konzerten. Die Künstler*innen werden noch bekannt gegeben. Nach der Demonstration geht es mit Workshops, Essen, Infoständen und kreativen Beiträgen weiter."
+            }
+        ]
     }
 }
