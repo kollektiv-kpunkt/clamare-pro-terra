@@ -62,6 +62,7 @@
 				profilePicture = false;
 				setTimeout(() => {
 					loader = false;
+					successMessageDOM.scrollIntoView({ behavior: 'smooth' });
 					setTimeout(() => {
 						successMessageDOM.animate([{ opacity: 1 }, { opacity: 0 }], {
 							duration: 500,
