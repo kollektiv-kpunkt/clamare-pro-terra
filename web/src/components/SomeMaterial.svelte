@@ -59,8 +59,8 @@
 				svgImage.src = svgData;
 
 				let canvas = document.createElement('canvas');
-				canvas.width = pfpDOM.offsetWidth;
-				canvas.height = pfpDOM.offsetHeight;
+				canvas.width = 1080;
+				canvas.height = 1080;
 				var context = canvas.getContext('2d');
 
 				pfpImageWrapper.appendChild(svgImage);
@@ -74,7 +74,7 @@
 					pfpImageWrapper.scrollIntoView({ behavior: 'smooth' });
 				}, 1000);
 				svgImage.onclick = async function () {
-					context.drawImage(svgImage, 0, 0); // Draw the fully rendered svg to the canvas
+					context.drawImage(svgImage, 0, 0, 1080, 1080);
 					const dataUrl = canvas.toDataURL();
 					let a = document.createElement('a');
 					a.href = dataUrl;
