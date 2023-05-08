@@ -4,14 +4,17 @@
 	import Button from './Button.svelte';
 	import { _, json, locale } from 'svelte-i18n';
 	import domtoimage from 'dom-to-image';
+	import { create_bidirectional_transition } from 'svelte/internal';
 
 	let images = [];
 	let loader = false;
 	let profilePicture = false;
 	let showForm = true;
-	let successMessage = false;
-	let successMessageDOM;
 	let pfpDOM;
+	let pfpImageWrapper;
+	let svgImage;
+	let showDownload;
+	let finalfilename;
 
 	onMount(async () => {
 		images = await fetch('/api/profilepictures?locale=' + $locale).then((res) => res.json());
@@ -45,37 +48,45 @@
 	}
 
 	async function createProfilepicture(event) {
+		showDownload = true;
 		if (event.target.files.length === 0) return;
 		loader = true;
 		profilePicture = true;
 		getBase64(event.target.files[0]).then((data) => {
 			pfpDOM.style.setProperty('background-image', "url('" + data + "'");
-			domtoimage.toPng(pfpDOM).then((dataUrl) => {
-				let a = document.createElement('a');
-				a.href = dataUrl;
-				a.download = event.target.files[0].name + '-demoprofilepicture.png';
-				a.click();
-				a.remove();
-				closeForm();
-				event.target.value = '';
-				successMessage = true;
+			domtoimage.toSvg(pfpDOM).then(async (svgData) => {
+				svgImage = new Image();
+				svgImage.src = svgData;
+
+				let canvas = document.createElement('canvas');
+				canvas.width = pfpDOM.offsetWidth;
+				canvas.height = pfpDOM.offsetHeight;
+				var context = canvas.getContext('2d');
+
+				pfpImageWrapper.appendChild(svgImage);
 				profilePicture = false;
+				closeForm();
+				finalfilename =
+					event.target.files[0].name + '-' + crypto.randomUUID() + '-climatestrike.png';
+				event.target.value = '';
 				setTimeout(() => {
 					loader = false;
-					successMessageDOM.scrollIntoView({ behavior: 'smooth' });
-					setTimeout(() => {
-						successMessageDOM.animate([{ opacity: 1 }, { opacity: 0 }], {
-							duration: 500,
-							easing: 'ease-in-out',
-							fill: 'forwards'
-						});
-						setTimeout(() => {
-							successMessage = false;
-						}, 500);
-					}, 2000);
+					pfpImageWrapper.scrollIntoView({ behavior: 'smooth' });
 				}, 1000);
+				svgImage.onclick = async function () {
+					context.drawImage(svgImage, 0, 0); // Draw the fully rendered svg to the canvas
+					const dataUrl = canvas.toDataURL();
+					let a = document.createElement('a');
+					a.href = dataUrl;
+					a.download = finalfilename;
+					a.click();
+				};
 			});
 		});
+	}
+
+	function downloadImage() {
+		svgImage.click();
 	}
 </script>
 
@@ -117,7 +128,7 @@
 		</div>
 	{/if}
 	{#if profilePicture}
-		<div class="pfp-inner-wrapper max-w-md mx-auto">
+		<div class="pfp-inner-wrapper">
 			<div class="cpt-pfp-wrapper aspect-square relative" bind:this={pfpDOM}>
 				<div class="cpt-pfp-blind" />
 				<!-- svelte-ignore a11y-missing-attribute -->
@@ -128,12 +139,15 @@
 			</div>
 		</div>
 	{/if}
-	{#if successMessage}
-		<div
-			class="text-center mt-4 flex flex-col items-center p-4 bg-secondary"
-			bind:this={successMessageDOM}
-		>
-			<p>{$_('somematerial.success')}</p>
+
+	{#if showDownload}
+		<div class="cpt-pfp-downloadsection mt-8">
+			<div class="pfp-download-image" bind:this={pfpImageWrapper} />
+			<div class="cpt-pfp-imagebutton flex justify-center">
+				<Button tag="button" classes="mt-4" onClick={downloadImage}
+					>{$_('somematerial.success')}</Button
+				>
+			</div>
 		</div>
 	{/if}
 </Section>
@@ -375,11 +389,6 @@
 		background-size: 110%;
 		background-position: bottom right;
 		background-repeat: no-repeat;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 1080px;
-		height: 1080px;
 
 		.cpt-pfp-blind {
 			position: absolute;

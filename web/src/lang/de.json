@@ -57,7 +57,7 @@
         "instructions": "Lade hier ein Bild von dir hoch, damit wir dir dein Profilbild mit dem Klimademo-Logo erstellen können. Du kannst es dann direkt auf Facebook oder Twitter hochladen.",
         "filehere": "Datei hier ablegen",
         "or": "oder",
-        "success": "Dein Profilbild wurde erfolgreich erstellt!"
+        "success": "Bild herunterladen"
     },
     "faq": {
         "title": "Häufige Fragen",
@@ -129,6 +129,22 @@
             "BIC: ABSOCH22",
             "Klima-Allianz Schweiz, Rue Fendt 1,",
             "1201 Genf"
+        ]
+    },
+    "footer": {
+        "newsletter": {
+            "title": "Bleib auf dem Laufenden!",
+            "content": "Abonniere unseren Newsletter und bleib auf dem Laufenden zu allen Neuigkeiten zur Klima-Demo im September!"
+        },
+        "links": [
+            {
+                "link": "https://www.klima-allianz.ch/",
+                "title": "Datenschutz"
+            },
+            {
+                "link": "https://www.klima-allianz.ch/",
+                "title": "Impressum"
+            }
         ]
     }
 }

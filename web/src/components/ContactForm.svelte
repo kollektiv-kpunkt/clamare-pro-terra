@@ -1,5 +1,5 @@
 <script>
-	import { _, json } from 'svelte-i18n';
+	import { _, json, locale } from 'svelte-i18n';
 	import FormField from './FormField.svelte';
 	import Button from './Button.svelte';
 </script>
@@ -10,6 +10,7 @@
 		{#each $json('contact.formFields') as field}
 			<FormField {...field} />
 		{/each}
+		<input type="hidden" name="locale" value={$locale} />
 		<div class="flex justify-end mt-4">
 			<Button tag="button" type="submit">{$_('contact.send')}</Button>
 		</div>
