@@ -72,6 +72,7 @@ class MeetingPointController extends Controller
             "location" => 'required',
             "latitude" => 'required',
             "longitude" => 'required',
+            "type" => ""
         ]);
         $meetingPoint->update($validated);
         return redirect()->route('meeting_points.index');
