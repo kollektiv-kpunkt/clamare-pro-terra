@@ -86,7 +86,7 @@ class MeetingPointController extends Controller
     }
 
     /**
-     * Display Meeting points of the current user.
+     * Display Entries of the current user.
      */
     public function personal()
     {
@@ -95,7 +95,7 @@ class MeetingPointController extends Controller
     }
 
     /**
-     * Change Approval status of the Meeting Point.
+     * Change Approval status of the Entry.
      */
     public function approval(MeetingPoint $meetingPoint)
     {
@@ -106,7 +106,7 @@ class MeetingPointController extends Controller
     }
 
     /**
-     * API: Get all approved Meeting Points.
+     * API: Get all approved Entries.
      */
     public function apiGetMeetingpoints()
     {

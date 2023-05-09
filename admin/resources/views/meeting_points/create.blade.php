@@ -1,10 +1,11 @@
-<x-app-layout :title="__('Create a new Meetingpoint')">
+<x-app-layout :title="__('Create a new Entry')">
     <x-app-container>
-        <x-page-title>{{__('Meetingpoint Details')}}</x-page-title>
+        <x-page-title>{{__('Entry Details')}}</x-page-title>
         <form action="{{route('meeting_points.store')}}" method="POST" class="cpt-form">
             @csrf
             <x-form-group name="title" :label="__('Title')" :required="true" :value="old('title')" :fullwidth="true"/>
             <x-form-group name="description" :label="__('Description')" :required="true" :value="old('description')" :fullwidth="true" type="textarea"/>
+            <x-form-group name="type" :label="__('Entry Type')" :required="true" :value="old('type')" :fullwidth="true" type="select" :options="['meeting_point', 'event']"/>
             <x-form-group name="meeting_time" :label="__('Meeting Time')" :required="true" :value="old('meeting_time')" :fullwidth="true" type="datetime-local"/>
             <x-form-group onchange="lookupLocation()" name="location" :label="__('Location')" :required="true" :value="old('location')" :fullwidth="true"/>
             <div class="w-full my-6">
@@ -12,7 +13,7 @@
             </div>
             <input type="hidden" name="latitude" id="creation-latitude">
             <input type="hidden" name="longitude" id="creation-longitude">
-            <x-primary-button type="submit">{{__('Create Meeting Point')}}</x-primary-button>
+            <x-primary-button type="submit">{{__('Create Entry')}}</x-primary-button>
         </form>
     </x-app-container>
 </x-app-layout>
@@ -25,9 +26,9 @@ import * as L from "https://unpkg.com/leaflet/dist/leaflet-src.esm.js";
 const map = L.map('creation-map').fitBounds([[45.7769477403, 6.02260949059], [47.8308275417, 10.4427014502]]);
 window.map = map;
 window.L = L;
-L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 20,
-	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+	attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
 let markerLatLong = [
     {{ old('latitude') ?? 46.94648825 }},

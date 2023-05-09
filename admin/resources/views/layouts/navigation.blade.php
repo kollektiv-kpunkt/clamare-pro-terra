@@ -10,12 +10,12 @@ $links = [
         'roles' => ['admin']
     ],
     [
-        'name' => __("Meeting Points"),
+        'name' => __("Entries"),
         "route" => "meeting_points.index",
         'roles' => ['admin', 'manager']
     ],
     [
-        'name' => __("Your meeting points"),
+        'name' => __("Your Entries"),
         "route" => "meeting_points.personal",
         'roles' => ['user']
     ],

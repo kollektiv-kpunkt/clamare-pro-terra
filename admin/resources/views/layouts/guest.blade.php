@@ -15,8 +15,8 @@
         @vite(['resources/css/app.scss'])
     </head>
     <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center px-4 bg-gray-100">
-            <div class="py-6">
+        <div class="px-4 bg-gray-100">
+            <div class="min-h-screen flex flex-col sm:justify-center items-center py-6">
                 <div class="flex justify-center">
                     <a href="/">
                         <x-application-logo class="w-20 h-20 fill-current text-gray-500" />

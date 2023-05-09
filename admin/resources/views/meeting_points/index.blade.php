@@ -1,11 +1,11 @@
-<x-app-layout :title="__('Meeting Points')">
+<x-app-layout :title="__('Entries')">
     <x-button-bar>
-        <x-link-button :href="route('meeting_points.create')" class="green">{{__("Create Meeting Point")}}</x-link-button>
+        <x-link-button :href="route('meeting_points.create')" class="green">{{__("Create Entry")}}</x-link-button>
     </x-button-bar>
     <x-app-container>
-        <x-page-title>{{ __('Meeting Points') }}</x-page-title>
+        <x-page-title>{{ __('Entries') }}</x-page-title>
         @if ($meetingPoints->isEmpty())
-            <p>{{ __('No meeting points found.') }}</p>
+            <p>{{ __('No Entries found.') }}</p>
         @else
         <x-admin-table>
             <table>

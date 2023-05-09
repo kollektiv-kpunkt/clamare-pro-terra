@@ -1,6 +1,6 @@
-<x-app-layout :title="__('Edit Meetingpoint') . ': ' . $meetingPoint->title">
+<x-app-layout :title="__('Edit Entry') . ': ' . $meetingPoint->title">
     <x-app-container>
-        <x-page-title>{{__('Meetingpoint Details')}}</x-page-title>
+        <x-page-title>{{__('Entry Details')}}</x-page-title>
         <form action="{{route('meeting_points.update', $meetingPoint)}}" method="POST" class="cpt-form">
             @csrf
             @method('PUT')
@@ -13,7 +13,7 @@
             </div>
             <input type="hidden" name="latitude" id="creation-latitude">
             <input type="hidden" name="longitude" id="creation-longitude">
-            <x-primary-button type="submit">{{__('Update Meeting Point')}}</x-primary-button>
+            <x-primary-button type="submit">{{__('Update Entry')}}</x-primary-button>
         </form>
     </x-app-container>
 </x-app-layout>
@@ -26,9 +26,9 @@ import * as L from "https://unpkg.com/leaflet/dist/leaflet-src.esm.js";
 const map = L.map('creation-map').fitBounds([[45.7769477403, 6.02260949059], [47.8308275417, 10.4427014502]]);
 window.map = map;
 window.L = L;
-L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 20,
-	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+	attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
 let markerLatLong = [
     {{ old('latitude', $meetingPoint->latitude) ?? 46.94648825 }},
