@@ -37,6 +37,7 @@ class MeetingPointController extends Controller
             "location" => 'required',
             "latitude" => 'required',
             "longitude" => 'required',
+            "type" => ""
         ]);
         $validated['user_id'] = auth()->user()->id;
         MeetingPoint::create($validated);

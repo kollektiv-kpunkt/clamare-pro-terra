@@ -30,7 +30,7 @@
 	});
 
 	onMount(async () => {
-		const response = await fetch('https://strikemap.kpunkt.ch/api/meetingpoints');
+		const response = await fetch('https://strikemap.klima-demo.ch/api/meetingpoints');
 		const data = await response.json();
 		addMeetingpoints(data);
 	});
@@ -125,11 +125,11 @@
 					{#each $json('strikemap.content') as content}
 						<p>{content}</p>
 					{/each}
-					<Button href="https://strikemap.kpunkt.ch/create/meetingpoint" classes="!block mt-5"
+					<Button href="https://strikemap.klima-demo.ch/create/meetingpoint" classes="!block mt-5"
 						>{$_('strikemap.buttons.meetingpoint')}</Button
 					>
 					<Button
-						href="https://strikemap.kpunkt.ch/create/event"
+						href="https://strikemap.klima-demo.ch/create/event"
 						color="white"
 						classes="!block mt-1">{$_('strikemap.buttons.event')}</Button
 					>
