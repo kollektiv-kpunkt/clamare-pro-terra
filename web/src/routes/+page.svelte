@@ -34,6 +34,5 @@
 	<SomeMaterial />
 	<FAQ />
 	<DetailSection />
-	<div style="height: 50vh" />
 	<Footer />
 </main>

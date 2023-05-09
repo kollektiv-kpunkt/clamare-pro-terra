@@ -3,7 +3,7 @@
         "visual": {
             "cta": "Agir Ensemble<br>maintenant.",
             "title1": "Manif<br>climat",
-            "title2": "30.09.<br>Berne",
+            "title2": "30.09<br>Berne",
             "date": "Bollwerk<br>14:00"
         },
         "title": "Manifestation nationale pour le climat à Berne le 30 septembre",
@@ -12,5 +12,144 @@
             "cta": "Participer",
             "more": "Plus d'infos"
         }
+    },
+    "intro": {
+        "title": "Agir maintenant !",
+        "content": [
+            "Le mouvement pour le climat essaie depuis de longues années de pousser notre gouvernement, les banques suisses, les multinationales climaticides et d’autres grands émettrices et émetteurs à prendre des mesures efficaces pour agir contre le changement climatique. Beaucoup de personnes ont repensé leur vision du monde grâce au mouvement pour le climat. Des individus courageux suivent de nouvelles pistes et beaucoup de secteurs tentent et développent des solutions qui protègent le climat. Mais les choses ne bougent toujours pas aussi vite et le temps des petits pas prudents est révolu ! Il faut passer des paroles aux actes.",
+            "<b>Nous allons nous faire entendre haut et fort tant que la justice climatique n’est pas une réalité dans notre société. Car renoncer à l’action et ne plus rien faire est un privilège que celles et ceux qui souffrent déjà aujourd’hui de la crise climatique n’ont souvent pas.</b>"
+        ],
+        "content2": {
+            "lead": "C’est pourquoi nous redescendrons dans la rue ensemble le 30 septembre !",
+            "listitems": [
+                "Nous exigeons <b>des mesures immédiates pour protéger le climat !</b>",
+                "Nous exigeons <b>la justice climatique !</b>",
+                "Nous exigeons que <b>celles et ceux qui contribuent le plus à la crise climatique assument leur responsabilité.</b>",
+                "Nous exigeons que <b>nos autorités donnent enfin la priorité à la protection du climat.</b>"
+            ],
+            "cta": "Toi aussi, viens avec nous à Berne le 30 septembre à 14 heures ! Nous allons marcher ensemble du Bollwerk à la Place fédérale, nous écouterons des discours et des concerts et nous réclamerons haut et fort la justice climatique. Après, il y aura des ateliers, des stands d’info, de la bonne nourriture et bien fplus encore. <b>Nous comptons sur toi !</b>"
+        },
+        "shareurl": "https://manif-climat.ch",
+        "sharetext": "Salut 🙋\nLe 30 septembre, une nouvelle grande manifestation pour le climat aura lieu à Berne. J'y vais, tu viens aussi ?"
+    },
+    "strikemap": {
+        "title": "Carte manif",
+        "content": [
+            "Des itinéraires communs seront proposés depuis partout en Suisse - à pied, à vélo ou en train. Et tu peux proposer toi aussi un point et une heure de rencontre pour un déplacement à Berne en groupe.",
+            "En plus, tu peux inscrire toutes tes actions de mobilisation sur cette carte, que ce soit du tractage, la tenue d’un stand d’info ou un atelier public de création de pancartes pour la manif."
+        ],
+        "buttons": {
+            "meetingpoint": "Organiser un point de rencontre",
+            "event": "Organiser une action de mobilisation"
+        }
+    },
+    "somematerial": {
+        "title": "Aide à la mobilisation !",
+        "content": [
+            "Pour maximiser le nombre de manifestant.e.s dans la rue le 30 septembre, nous aurons besoin de vous. Mobilisez sur les réseaux sociaux, allez distribuer des tracts, faites des petites actions pour faire passer le message, organisez un stand d’info ou parlez de la manif avec vos ami.e.s et vos proches.",
+            "Damit am 30. September zahlreiche Menschen gemeinsam auf der Strasse stehen, braucht es eure Unterstützung: mobilisiert auf euren Sozialen Medien, geht Flyer verteilen, eine kleine Mobilisierugnsaktion machen, ein Infostand aufstellen oder redet mit euren Freund*innen und Familienmitglieder über die Demonstration.",
+            "<b>Crée ta propre photo de profil ou télécharge nos modèles !</b>"
+        ],
+        "buttons": {
+            "profilepicture": "Créer une photo de profil",
+            "downloadmedia": "Télécharger des modèles"
+        },
+        "instructions": "Télécharge ici une photo de toi pour que nous puissions créer ta photo de profil avec le logo de manif-climat. Tu peux ensuite la télécharger directement sur Facebook ou Twitter.",
+        "filehere": "Déposer le fichier ici",
+        "or": "ou",
+        "success": "Télécharger l'image"
+    },
+    "faq": {
+        "title": "Questions fréquentes",
+        "questions": [
+            {
+                "question": "La manifestation est-elle autorisée ?",
+                "answer": "Oui, la manifestation est autorisée."
+            },
+            {
+                "question": "La manif est-elle accessible ?",
+                "answer": "Malheureusement, nous ne pouvons pas encore donner une réponse ferme, mais nous publierons un document détaillé sur l’accessibilité en août. Si tu as déjà des demandes concrètes ou des questions, n’hésite pas à nous contacter. Nous voulons que la manifestation soit aussi accessible que possible."
+            },
+            {
+                "question": "Comment puis-je organiser une arrivée à vélo pour un groupe ?",
+                "answer": "Partage ton idée avec tes amis ou sur les réseaux sociaux, puis choisissez un bon itinéraire, réfléchissez à l’heure et au point de départ, au matériel dont vous aurez besoin (kit de réparation, trousse de premiers soins …). Ensuite, vous pouvez essayer de persuader autant de personnes que possible de vous rejoindre à vélo. Important : inscrivez l’itinéraire sur le site pour que d’autres personnes puissent facilement te rejoindre. Nous mettrons à disposition un bon espace de stationnement pour les vélos à Berne, et nous vous ferons savoir son emplacement en temps utile."
+            },
+            {
+                "question": "Comment puis-je soutenir la manifestation en tant qu’individu ?",
+                "answer": "Nous avons surtout besoin d'aide pour la mobilisation. Donc tu pourrais par exemple distribuer des tracts, poster des graphiques sur les réseaux sociaux, tenir un stand d’info ou convaincre les élèves de ta classe de venir à la manif."
+            },
+            {
+                "question": "Comment mon organisation peut-elle soutenir la manifestation ?",
+                "answer": "Prends contact avec nous pour que nous puissions voir ensemble ce qui conviendrait à ton organisation. Nous avons toujours besoin d’aide pour la mobilisation. En plus, il y a la possibilité de faire partie du “programme d’après” par exemple en organisant un atelier, en offrant une contribution créative ou en tenant un stand d’info."
+            },
+            {
+                "question": "Quels seront les éléments du programme ?",
+                "answer": "Nous nous retrouverons à 14 h au Bollwerk à Berne. Ensuite, nous nous déplacerons en cortège par les rues de Berne jusqu’à la Place fédérale en manifestant haut et fort. Sur la Place fédérale, nous profiterons d’un programme varié avec des discours, des contributions créatives et des concerts formidables. Nous vous ferons savoir plus tard qui fera partie de la brochette d’artistes. Après le rassemblement, le programme continuera avec des ateliers, de la nourriture, des stands d’info et des contributions créatives."
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "formFields": [
+            {
+                "name": "name",
+                "label": "Quel est ton nom ?",
+                "required": true
+            },
+            {
+                "name": "email",
+                "type": "email",
+                "label": "Et ton adresse e-mail ?",
+                "required": true
+            },
+            {
+                "name": "message",
+                "type": "textarea",
+                "label": "Que veux-tu nous dire ?",
+                "required": true
+            },
+            {
+                "name": "optin",
+                "type": "checkbox",
+                "label": "Je suis d'accord pour que la manifestation pour le climat me tienne au courant. <a href=\"https://alliance-climatique.ch/politique-de-confidentialite/\" target=\"_blank\">Plus d'informations sur la protection des données.</a>",
+                "checked": true
+            }
+        ],
+        "success": "Merci pour ton message ! Nous te contacterons dès que possible.",
+        "error": "Oups, quelque chose s'est mal passé. Veuillez réessayer.",
+        "send": "Envoyer"
+    },
+    "donate": {
+        "title": "Faire un don",
+        "content": "Tout don est le bienvenu pour couvrir les dépenses liées à la manifestation.",
+        "details": [
+            "<b>Nos coordonnées :</b>",
+            "Banque Alternative Suisse,",
+            "4601 Olten",
+            "Numéro de compte : 367.696.100-00",
+            "IBAN: CH41 0839 0036 7696 1000 0",
+            "BIC: ABSOCH22",
+            "Alliance Climatique Suisse, Rue Fendt 1,",
+            "1201 Genève"
+        ]
+    },
+    "footer": {
+        "newsletter": {
+            "title": "Reste au courant !",
+            "content": "Abonne-toi à notre newsletter et reste au courant de toutes les nouveautés concernant la manifestation pour le climat en septembre !",
+            "email": "Adresse électronique",
+            "success": "Merci pour ton inscription !",
+            "error": "Oups, quelque chose s'est mal passé. Veuillez réessayer."
+        },
+        "links": [
+            {
+                "href": "https://alliance-climatique.ch/politique-de-confidentialite/",
+                "title": "Protection des données"
+            },
+            {
+                "href": "https://alliance-climatique.ch/mentions-legales/",
+                "title": "Mentions légales"
+            }
+        ]
     }
 }

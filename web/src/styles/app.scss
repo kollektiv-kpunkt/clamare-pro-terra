@@ -4,3 +4,7 @@
 
 @import "./typography/style.scss";
 @import "./elements/style.scss";
+
+html {
+    scroll-behavior: smooth;
+}

@@ -4,6 +4,8 @@
 	export let label;
 	export let required = false;
 	export let checked = false;
+	export let placeholder = '';
+	export let className = '';
 
 	export let id = name + '-' + crypto.randomUUID();
 
@@ -15,15 +17,15 @@
 	}
 </script>
 
-<div class="cpt-form-group cpt-form-group--{type}">
+<div class="cpt-form-group cpt-form-group--{type} {className}">
 	{#if type == 'checkbox'}
-		<input type="checkbox" {name} {id} {checked} />
+		<input type="checkbox" {name} {id} {checked} value="1" />
 	{/if}
 	<label for={id}>{@html label}</label>
 	{#if type == 'textarea'}
-		<textarea {name} {id} on:input={setHeight} bind:this={textarea} {required} />
+		<textarea {name} {id} on:input={setHeight} bind:this={textarea} {required} {placeholder} />
 	{:else if type != 'checkbox'}
-		<input {type} {name} {id} {required} />
+		<input {type} {name} {id} {required} {placeholder} />
 	{/if}
 </div>
 
@@ -39,7 +41,7 @@
 		textarea {
 			background-color: theme('colors.gray.50');
 			border-bottom: 2px solid theme('colors.secondary');
-			padding: 0.25rem 0.125rem;
+			padding: 0.5rem 0.3rem;
 		}
 
 		textarea {
@@ -90,6 +92,15 @@
 						border: none;
 					}
 				}
+			}
+		}
+
+		&--accent {
+			input[type='text'],
+			input[type='email'],
+			input[type='number'],
+			textarea {
+				border-bottom: 2px solid theme('colors.accent');
 			}
 		}
 	}

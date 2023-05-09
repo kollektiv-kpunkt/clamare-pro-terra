@@ -30,7 +30,7 @@
             ],
             "cta": "Komm auch du mit uns am 30. September um 14:00 nach Bern! Gemeinsam werden wir an diesem Tag vom Bollwerk zum Bundesplatz laufen, Reden und Konzerte hören und lautstark Klimagerechtigkeit einfordern. Danach gibt es auf dem Bundesplatz noch Workshops, Infostände, leckeres Essen und vieles mehr. <b>Sei dabei!</b>"
         },
-        "shareurl": "https://klimademo.ch",
+        "shareurl": "https://klima-demo.ch",
         "sharetext": "Hoi 🙋\nAm 30. September findet in Bern wieder ein Mal eine grosse Klima-Demo statt. Ich geh hin, kommst du auch?"
     },
     "strikemap": {
@@ -115,6 +115,8 @@
                 "checked": true
             }
         ],
+        "success": "Danke für deine Nachricht! Wir melden uns so schnell wie möglich bei dir.",
+        "error": "Ups, da ist etwas schief gelaufen. Bitte versuche es noch einmal.",
         "send": "Absenden"
     },
     "donate": {
@@ -134,15 +136,18 @@
     "footer": {
         "newsletter": {
             "title": "Bleib auf dem Laufenden!",
-            "content": "Abonniere unseren Newsletter und bleib auf dem Laufenden zu allen Neuigkeiten zur Klima-Demo im September!"
+            "content": "Abonniere unseren Newsletter und bleib auf dem Laufenden zu allen Neuigkeiten zur Klima-Demo im September!",
+            "email": "E-Mail Adresse",
+            "success": "Danke für deine Anmeldung!",
+            "error": "Ups, da ist etwas schief gelaufen. Bitte versuche es noch einmal."
         },
         "links": [
             {
-                "link": "https://www.klima-allianz.ch/",
+                "href": "https://www.klima-allianz.ch/datenschutzerklaerung",
                 "title": "Datenschutz"
             },
             {
-                "link": "https://www.klima-allianz.ch/",
+                "href": "https://www.klima-allianz.ch/impressum/",
                 "title": "Impressum"
             }
         ]

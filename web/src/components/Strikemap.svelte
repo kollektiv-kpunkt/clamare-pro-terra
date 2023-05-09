@@ -94,43 +94,50 @@
 	};
 </script>
 
-<Section classNames="!px-0">
-	<div class="cpt-strikemap__outer">
-		<div class="cpt-container cpt-container--small cpt-strikemap">
-			<div class="flex justify-center">
-				<h2 class="cpt-text-highlight text-3xl md:text-5xl text-center">
-					{$_('strikemap.title')}
-				</h2>
-			</div>
-			<div class="cpt-strikemap__map mt-8 md:mt-12">
-				{#if browser}
-					<LeafletMap options={mapOptions} bind:this={leafletMap}>
-						<TileLayer url={tileUrl} options={tileLayerOptions} />
-					</LeafletMap>
-				{/if}
-			</div>
-			<div class="text-center mt-10 pb-10">
-				{#if popup.visible == true}
-					<div class="p-4 bg-accent text-white mb-8 relative">
-						<h3 class="text-2xl">{popup.title}</h3>
-						<p class="mt-4">{popup.description}</p>
-						<p class="mt-2">{popup.location}</p>
-						<i class="icofont-close-circled absolute top-2 left-2 text-xl" on:click={closePopup} />
-					</div>
-				{/if}
-				{#each $json('strikemap.content') as content}
-					<p>{content}</p>
-				{/each}
-				<Button href="https://strikemap.kpunkt.ch/create/meetingpoint" classes="!block mt-5"
-					>{$_('strikemap.buttons.meetingpoint')}</Button
-				>
-				<Button href="https://strikemap.kpunkt.ch/create/event" color="white" classes="!block mt-1"
-					>{$_('strikemap.buttons.event')}</Button
-				>
+<div id="support">
+	<Section classNames="!px-0">
+		<div class="cpt-strikemap__outer">
+			<div class="cpt-container cpt-container--small cpt-strikemap">
+				<div class="flex justify-center">
+					<h2 class="cpt-text-highlight text-3xl md:text-5xl text-center">
+						{$_('strikemap.title')}
+					</h2>
+				</div>
+				<div class="cpt-strikemap__map mt-8 md:mt-12">
+					{#if browser}
+						<LeafletMap options={mapOptions} bind:this={leafletMap}>
+							<TileLayer url={tileUrl} options={tileLayerOptions} />
+						</LeafletMap>
+					{/if}
+				</div>
+				<div class="text-center mt-10 pb-10">
+					{#if popup.visible == true}
+						<div class="p-4 bg-accent text-white mb-8 relative">
+							<h3 class="text-2xl">{popup.title}</h3>
+							<p class="mt-4">{popup.description}</p>
+							<p class="mt-2">{popup.location}</p>
+							<i
+								class="icofont-close-circled absolute top-2 left-2 text-xl"
+								on:click={closePopup}
+							/>
+						</div>
+					{/if}
+					{#each $json('strikemap.content') as content}
+						<p>{content}</p>
+					{/each}
+					<Button href="https://strikemap.kpunkt.ch/create/meetingpoint" classes="!block mt-5"
+						>{$_('strikemap.buttons.meetingpoint')}</Button
+					>
+					<Button
+						href="https://strikemap.kpunkt.ch/create/event"
+						color="white"
+						classes="!block mt-1">{$_('strikemap.buttons.event')}</Button
+					>
+				</div>
 			</div>
 		</div>
-	</div>
-</Section>
+	</Section>
+</div>
 
 <style lang="scss">
 	.cpt-strikemap {
