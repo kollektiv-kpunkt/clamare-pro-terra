@@ -24,6 +24,7 @@ class MeetingPoint extends Model
         'user_id',
         'latitude',
         'longitude',
+        'type'
     ];
 
     /**
