@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("/meetingpoints", [MeetingPointController::class, "apiGet"]);
+Route::get("/meetingpoints", [MeetingPointController::class, "apiGetMeetingpoints"]);
+Route::get("/events", [MeetingPointController::class, "apiGetEvents"]);

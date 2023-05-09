@@ -108,9 +108,18 @@ class MeetingPointController extends Controller
     /**
      * API: Get all approved Meeting Points.
      */
-    public function apiGet()
+    public function apiGetMeetingpoints()
     {
-        $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude")->where('approved', true)->get();
+        $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude")->where('approved', true)->where("type", "meetingpoint")->where("meeting_time", ">", now())->get();
+        return response()->json($meetingPoints);
+    }
+
+    /**
+     * API: Get all approved Events.
+     */
+    public function apiGetEvents()
+    {
+        $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude")->where('approved', true)->where("type", "event")->where("meeting_time", ">", now())->get();
         return response()->json($meetingPoints);
     }
 
