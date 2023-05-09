@@ -1,6 +1,6 @@
 {
     "og": {
-        "title": "Klima-Demo 30.09 | JETZT HANDELN!",
+        "title": "Klimademo 30.09 | JETZT HANDELN!",
         "description": "Am 30. September gehen wir deswegen gemeinsam für Klimagerechtigkeit auf die Strasse. Sei dabei!"
     },
     "heroine": {
@@ -35,7 +35,7 @@
             "cta": "Komm auch du mit uns am 30. September um 14:00 nach Bern! Gemeinsam werden wir an diesem Tag vom Bollwerk zum Bundesplatz laufen, Reden und Konzerte hören und lautstark Klimagerechtigkeit einfordern. Danach gibt es auf dem Bundesplatz noch Workshops, Infostände, leckeres Essen und vieles mehr. <b>Sei dabei!</b>"
         },
         "shareurl": "https://klima-demo.ch",
-        "sharetext": "Hoi 🙋\nAm 30. September findet in Bern wieder ein Mal eine grosse Klima-Demo statt. Ich geh hin, kommst du auch?"
+        "sharetext": "Hoi 🙋\nAm 30. September findet in Bern wieder einmal eine grosse Klimademo statt. Ich geh hin, kommst du auch?"
     },
     "strikemap": {
         "title": "Demokarte",
@@ -169,6 +169,26 @@
                 "title": "Französisches Logo",
                 "preview": "/images/logo-fr.png",
                 "download": "/images/logo-fr.png"
+            },
+            {
+                "title": "Italienisches Logo",
+                "preview": "/images/logo-it.png",
+                "download": "/images/logo-it.png"
+            },
+            {
+                "title": "Instagram Post Deutsch",
+                "preview": "/images/downloads/instagrampost-de.png",
+                "download": "/images/downloads/instagrampost-de.png"
+            },
+            {
+                "title": "Instagram Post Französisch",
+                "preview": "/images/downloads/instagrampost-fr.png",
+                "download": "/images/downloads/instagrampost-fr.png"
+            },
+            {
+                "title": "Instagram Post Italienisch",
+                "preview": "/images/downloads/instagrampost-it.png",
+                "download": "/images/downloads/instagrampost-it.png"
             }
         ]
     }
