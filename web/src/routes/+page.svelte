@@ -1,6 +1,7 @@
 <script>
 	/**
 	 * Components:
+	 * - Head
 	 * - Heroine
 	 * - Intro
 	 * - Logos
@@ -10,6 +11,7 @@
 	 * - DetailSection
 	 * - Footer
 	 */
+	import Head from '../components/Head.svelte';
 	import Heroine from '../components/Heroine.svelte';
 	import Intro from '../components/Intro.svelte';
 	import Logos from '../components/Logos.svelte';
@@ -27,6 +29,7 @@
 </script>
 
 <main id="svelte-main-container">
+	<Head />
 	<Heroine />
 	<Intro />
 	<Logos />
