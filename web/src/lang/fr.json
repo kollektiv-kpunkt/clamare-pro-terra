@@ -169,6 +169,26 @@
                 "title": "Logo allemand",
                 "preview": "/images/logo-de.png",
                 "download": "/images/logo-de.png"
+            },
+            {
+                "title": "Logo italien",
+                "preview": "/images/logo-it.png",
+                "download": "/images/logo-it.png"
+            },
+            {
+                "title": "Instagram Post français",
+                "preview": "/images/downloads/instagrampost-fr.png",
+                "download": "/images/downloads/instagrampost-fr.png"
+            },
+            {
+                "title": "Instagram Post allemand",
+                "preview": "/images/downloads/instagrampost-de.png",
+                "download": "/images/downloads/instagrampost-de.png"
+            },
+            {
+                "title": "Instagram Post italien",
+                "preview": "/images/downloads/instagrampost-it.png",
+                "download": "/images/downloads/instagrampost-it.png"
             }
         ]
     }
