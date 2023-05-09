@@ -110,7 +110,7 @@ class MeetingPointController extends Controller
      */
     public function apiGetMeetingpoints()
     {
-        $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude")->where('approved', true)->where("type", "meetingpoint")->where("meeting_time", ">", now())->get();
+        $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude")->where('approved', true)->where("type", "meeting_point")->whereDate("meeting_time", ">", now())->get();
         return response()->json($meetingPoints);
     }
 
@@ -119,7 +119,7 @@ class MeetingPointController extends Controller
      */
     public function apiGetEvents()
     {
-        $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude")->where('approved', true)->where("type", "event")->where("meeting_time", ">", now())->get();
+        $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude")->where('approved', true)->where("type", "event")->whereDate("meeting_time", ">", now())->get();
         return response()->json($meetingPoints);
     }
 
