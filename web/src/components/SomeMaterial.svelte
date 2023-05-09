@@ -4,7 +4,7 @@
 	import Button from './Button.svelte';
 	import { _, json, locale } from 'svelte-i18n';
 	import domtoimage from 'dom-to-image';
-	import { create_bidirectional_transition } from 'svelte/internal';
+	import Downloadables from './Downloadables.svelte';
 
 	let images = [];
 	let loader = false;
@@ -15,6 +15,7 @@
 	let svgImage;
 	let showDownload;
 	let finalfilename;
+	let showDownloadables = false;
 
 	onMount(async () => {
 		images = await fetch('/api/profilepictures?locale=' + $locale).then((res) => res.json());
@@ -104,7 +105,7 @@
 		<Button onClick={openform} classes="!block mt-5"
 			>{$_('somematerial.buttons.profilepicture')}</Button
 		>
-		<Button href="#" outline={true} classes="!block mt-1"
+		<Button href="#" outline={true} classes="!block mt-1" onClick={() => (showDownloadables = true)}
 			>{$_('somematerial.buttons.downloadmedia')}</Button
 		>
 	</div>
@@ -151,7 +152,7 @@
 		</div>
 	{/if}
 </Section>
-<div class="cpt-profilepics-demo mt-8 md:mt-12 flex overflow-x-hidden">
+<div class="cpt-profilepics-demo mt-12 md:mt-16 flex overflow-x-hidden">
 	{#each images as image}
 		<img src={image} alt="Sample profile picture" loading="lazy" />
 	{/each}
@@ -175,6 +176,8 @@
 		</div>
 	</div>
 {/if}
+
+<Downloadables visible={showDownloadables} />
 
 <style lang="scss">
 	.cpt-profilepics-demo {

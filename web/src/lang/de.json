@@ -151,5 +151,21 @@
                 "title": "Impressum"
             }
         ]
+    },
+    "downloadables": {
+        "title": "Vorlagen herunterladen",
+        "content": "Klicke auf eine Vorlage, um sie herunterzuladen.",
+        "materials": [
+            {
+                "title": "Deutsches Logo",
+                "preview": "/images/logo-de.png",
+                "download": "/images/logo-de.png"
+            },
+            {
+                "title": "Französisches Logo",
+                "preview": "/images/logo-fr.png",
+                "download": "/images/logo-fr.png"
+            }
+        ]
     }
 }

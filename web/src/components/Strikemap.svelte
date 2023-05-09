@@ -33,6 +33,10 @@
 		const response = await fetch('https://strikemap.klima-demo.ch/api/meetingpoints');
 		const data = await response.json();
 		addMeetingpoints(data);
+
+		const response2 = await fetch('https://strikemap.klima-demo.ch/api/events');
+		const data2 = await response2.json();
+		addEvents(data2);
 	});
 
 	let meetingPoints = [];
@@ -65,8 +69,44 @@
 		});
 	}
 
+	let events = [];
+	function addEvents(markers) {
+		markers.forEach((marker) => {
+			let markerOptions = {
+				title: marker.title,
+				icon: L.icon({
+					iconUrl: '/images/markers/event-icon.png',
+					iconSize: [50, 50],
+					iconAnchor: [25, 50],
+					popupAnchor: [0, -50]
+				})
+			};
+			let item = L.marker([marker.latitude, marker.longitude], markerOptions).addTo(map);
+			item.addEventListener('click', () => {
+				events.forEach((marker) => {
+					if (marker != item) {
+						marker.zoom = false;
+					}
+				});
+				map.flyTo([marker.latitude, marker.longitude], 17, {
+					duration: 1
+				});
+				setTimeout(() => {
+					openPopup(marker);
+				}, 1200);
+			});
+			events.push(item);
+		});
+	}
+
 	function removeMeetingpoints() {
 		meetingPoints.forEach((marker) => {
+			map.removeLayer(marker);
+		});
+	}
+
+	function removeEvents() {
+		events.forEach((marker) => {
 			map.removeLayer(marker);
 		});
 	}
