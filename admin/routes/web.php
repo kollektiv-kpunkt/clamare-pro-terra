@@ -40,4 +40,26 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::prefix("create")->group(function(){
+    Route::get("/event", function(){
+        return view("create.form", [
+            "title" => __("Create a mobilisation event for the Climate-Demonstration in September!"),
+            "type" => "event"
+        ]);
+    })->name("create.event");
+
+    Route::get("meetingpoint", function(){
+        return view("create.form", [
+            "title" => __("Create a meeting point for the Climate-Demonstration in September!"),
+            "type" => "meetingpoint"
+        ]);
+    })->name("create.meetingpoint");
+
+    Route::get("success", function() {
+        return view("create.success");
+    })->name("create.success");
+
+    Route::post("/store", [MeetingPointController::class, "store_frontend"])->name("create.store");
+});
+
 require __DIR__.'/auth.php';

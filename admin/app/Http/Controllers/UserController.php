@@ -103,7 +103,6 @@ class UserController extends Controller
         if ($user->id == 1) {
             return redirect()->route('users.index');
         }
-        dd($user);
         $user->approved = !$user->approved;
         $user->save();
         return redirect()->route('users.index');

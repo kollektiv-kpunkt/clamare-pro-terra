@@ -85,7 +85,9 @@
 				<img src="/images/logo-{$locale}.png" alt="" class="h-20" />
 			</div>
 			<div class="cpt-footer-bottombar__right mt-auto uppercase tracking-wide">
-				<div class="flex justify-end items-end flex-col md:flex-row gap-x-4 underline">
+				<div
+					class="flex justify-end items-end text-end flex-col md:flex-row gap-x-4 gap-y-2 underline"
+				>
 					{#each $json('footer.links') as link}
 						<a href={link.href} class="cpt-footer-link" target="_blank">{link.title}</a>
 					{/each}

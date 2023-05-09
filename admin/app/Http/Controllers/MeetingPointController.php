@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\MeetingPoint;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class MeetingPointController extends Controller
@@ -111,5 +112,51 @@ class MeetingPointController extends Controller
     {
         $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude")->where('approved', true)->get();
         return response()->json($meetingPoints);
+    }
+
+    /**
+     * Userform: Create Event
+     */
+    public function store_frontend(Request $request)
+    {
+        $response = [
+            "status" => "success",
+            "message" => ""
+        ];
+        if (isset($request->user_email)) {
+            $userExists = User::where('email', $request->user_email)->first();
+            if (!$userExists) {
+                $validated = $request->validate([
+                    'user_email' => 'required|email|unique:users,email',
+                ]);
+                $user = new User();
+                $user->name = $request->user_email;
+                $user->email = $request->user_email;
+                $user->role = 'user';
+                $user->password = bcrypt(bin2hex(random_bytes(8)));
+                $user->save();
+                \Illuminate\Support\Facades\Password::sendResetLink($user->only('email'));
+                $userId = $user->id;
+                $response['message'] = __("We created a new User for you. Please check your email for password reset link.");
+            } else {
+                $userId = $userExists->id;
+                $response['message'] = __("We assigned this entry to your existing account. <a href=\"/\" class=\"text-rose-500 underline\">You can login here and check your entries.</a>");
+            }
+        } else {
+            $userId = 1;
+            $response['message'] = __("We assigned this entry to the default user. If you wanna be able to edit it, please reach out to us.");
+        }
+        $validated = $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+            "meeting_time" => 'required',
+            "location" => 'required',
+            "latitude" => 'required',
+            "longitude" => 'required',
+        ]);
+        $validated['user_id'] = $userId;
+        $meetingPoint = MeetingPoint::create($validated);
+        $request->session()->flash('response', $response);
+        return redirect()->route('create.success');
     }
 }

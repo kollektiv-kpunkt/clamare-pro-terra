@@ -27,7 +27,7 @@
                         <td>{{ $meetingPoint->meeting_time->format("d.m.y") }}</td>
                         <td>{{ $meetingPoint->meeting_time->format("H:i") }}</td>
                         <td>{{ $meetingPoint->approved ? __('approved') : __('pending') }}</td>
-                        <td>{{ $meetingPoint->user->name }}</td>
+                        <td>{{ $meetingPoint->user->name ?? "Deleted user"}}</td>
                         <td>
                             <x-button-link :href="route('meeting_points.edit', $meetingPoint)">{{ __('Edit') }}</x-button-link>
                             <x-button-link :href="route('meeting_points.destroy', $meetingPoint)" method="delete">{{ __('Delete') }}</x-button-link>
