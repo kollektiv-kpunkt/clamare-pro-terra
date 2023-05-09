@@ -13,7 +13,7 @@ class MeetingPointController extends Controller
      */
     public function index()
     {
-        $meetingPoints = MeetingPoint::paginate(10);
+        $meetingPoints = MeetingPoint::orderBy("approved", "desc")->orderBy("meeting_time", "asc")->paginate(10);
         return view('meeting_points.index', compact('meetingPoints'));
     }
 
