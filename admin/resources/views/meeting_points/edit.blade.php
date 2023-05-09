@@ -7,6 +7,7 @@
             <x-form-group name="title" :label="__('Title')" :required="true" :value="old('title', $meetingPoint->title)" :fullwidth="true"/>
             <x-form-group name="description" :label="__('Description')" :required="true" :value="old('description', $meetingPoint->description)" :fullwidth="true" type="textarea"/>
             <x-form-group name="meeting_time" :label="__('Meeting Time')" :required="true" :value="old('meeting_time', $meetingPoint->meeting_time)" :fullwidth="true" type="datetime-local"/>
+            <x-form-group name="type" :label="__('Entry Type')" :required="true" :value="old('type',  $meetingPoint->type)" :fullwidth="true" type="select" :options="['meeting_point', 'event']"/>
             <x-form-group onchange="lookupLocation()" name="location" :label="__('Location')" :required="true" :value="old('location', $meetingPoint->location)" :fullwidth="true"/>
             <div class="w-full my-6">
                 <div id="creation-map" class="aspect-square sm:aspect-16/9 md:aspect-16/7 w-full"></div>
