@@ -106,6 +106,9 @@
                 alert.innerHTML ="{{__('Sorry, we couldn\'t find that location.')}}";
                 input.parentNode.insertBefore(alert, input);
                 input.setCustomValidity(`{!!__("Sorry, we couldn't find that location.")!!}`);
+                setTimeout(() => {
+                    removeLoader(loader);
+                }, 500);
                 return;
             }
             input.setCustomValidity("");
