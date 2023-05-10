@@ -12,7 +12,7 @@ let domains = {
     "fr.pn82.kpunkt.ch": "fr",
     "klima-demo.ch": "de",
     "manif-climat.ch": "fr",
-    "localhost:5173": "de"
+    "localhost:5173": "fr"
 }
 
 export async function load(page) {

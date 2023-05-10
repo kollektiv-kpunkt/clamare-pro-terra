@@ -6,6 +6,8 @@
 	let onlineDonationContainer;
 
 	function openDonationForm() {
+		let e = window.event;
+		e.preventDefault();
 		onlineDonationContainer.animate(
 			[
 				{ maxHeight: '0px' },
@@ -48,5 +50,5 @@
 	<div class="cpt-online-donation max-h-0 overflow-hidden" bind:this={onlineDonationContainer}>
 		<div class="rnw-widget-container pt-12" />
 	</div>
-	<Button classes="mt-8" onClick={openDonationForm}>Online Spenden</Button>
+	<Button classes="mt-8" onClick={openDonationForm}>{$_('donate.donateonline')}</Button>
 </div>
