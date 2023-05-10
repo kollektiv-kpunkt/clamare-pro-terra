@@ -1,5 +1,5 @@
 <script>
-	import { _ } from 'svelte-i18n';
+	import { _, locale } from 'svelte-i18n';
 </script>
 
 <svelte:head>
@@ -20,15 +20,15 @@
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://klima-demo.ch/" />
+	<meta property="og:url" content={$_('__')} />
 	<meta property="og:title" content={$_('og.title')} />
 	<meta property="og:description" content={$_('og.description')} />
-	<meta property="og:image" content="" />
+	<meta property="og:image" content={$_('__') + '/images/og/og-' + $locale + '.jpg'} />
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://klima-demo.ch/" />
+	<meta property="twitter:url" content={$_('__')} />
 	<meta property="twitter:title" content={$_('og.title')} />
 	<meta property="twitter:description" content={$_('og.description')} />
-	<meta property="twitter:image" content="" />
+	<meta property="twitter:image" content={$_('__') + '/images/og/og-' + $locale + '.jpg'} />
 </svelte:head>
