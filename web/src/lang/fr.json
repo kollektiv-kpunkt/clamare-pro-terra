@@ -34,6 +34,24 @@
             ],
             "cta": "Toi aussi, viens avec nous à Berne le 30 septembre à 14 heures ! Nous allons marcher ensemble du Bollwerk à la Place fédérale, nous écouterons des discours et des concerts et nous réclamerons haut et fort la justice climatique. Après, il y aura des ateliers, des stands d’info, de la bonne nourriture et bien fplus encore. <b>Nous comptons sur toi !</b>"
         },
+        "sharebuttons": [
+            {
+                "type": "telegram",
+                "text": "Partager sur Telegram"
+            },
+            {
+                "type": "whatsapp",
+                "text": "Partager sur Whatsapp"
+            },
+            {
+                "type": "facebook",
+                "text": "Partager sur Facebook"
+            },
+            {
+                "type": "twitter",
+                "text": "Partager sur Twitter"
+            }
+        ],
         "shareurl": "https://manif-climat.ch",
         "sharetext": "Salut 🙋\nLe 30 septembre, une nouvelle grande manifestation pour le climat aura lieu à Berne. J'y vais, tu viens aussi ?"
     },

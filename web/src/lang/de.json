@@ -35,6 +35,24 @@
             ],
             "cta": "Komm auch du mit uns am 30. September um 14:00 nach Bern! Gemeinsam werden wir an diesem Tag vom Bollwerk zum Bundesplatz laufen, Reden und Konzerte hören und lautstark Klimagerechtigkeit einfordern. Danach gibt es auf dem Bundesplatz noch Workshops, Infostände, leckeres Essen und vieles mehr. <b>Sei dabei!</b>"
         },
+        "sharebuttons": [
+            {
+                "type": "telegram",
+                "text": "Per Telegram teilen"
+            },
+            {
+                "type": "whatsapp",
+                "text": "Per WhatsApp teilen"
+            },
+            {
+                "type": "facebook",
+                "text": "Auf Facebook teilen"
+            },
+            {
+                "type": "twitter",
+                "text": "Auf Twitter teilen"
+            }
+        ],
         "shareurl": "https://klima-demo.ch",
         "sharetext": "Hoi 🙋\nAm 30. September findet in Bern wieder einmal eine grosse Klimademo statt. Ich geh hin, kommst du auch?"
     },

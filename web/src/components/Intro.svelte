@@ -32,7 +32,7 @@
 		window.open(url, '_blank');
 	}
 
-	const shareButtons = ['telegram', 'whatsapp', 'facebook', 'twitter'];
+	const shareButtons = $json('intro.sharebuttons');
 </script>
 
 <Section>
@@ -63,11 +63,11 @@
 		<div class="cpt-intro-share grid grid-cols-1 md:grid-cols-2 gap-2 mt-4 md:mt-6">
 			{#each shareButtons as button}
 				<Button
-					classes="{button}-button"
+					classes="{button.type}-button"
 					onClick={() => handleShare(button)}
 					href="#cpt-share-{button}"
 				>
-					Per {button} teilen
+					{button.text}
 				</Button>
 			{/each}
 		</div>
