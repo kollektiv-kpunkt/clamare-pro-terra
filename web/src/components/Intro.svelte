@@ -64,8 +64,8 @@
 			{#each shareButtons as button}
 				<Button
 					classes="{button.type}-button"
-					onClick={() => handleShare(button)}
-					href="#cpt-share-{button}"
+					onClick={() => handleShare(button.type)}
+					href="#cpt-share-{button.type}"
 				>
 					{button.text}
 				</Button>
