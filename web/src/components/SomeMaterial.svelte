@@ -157,6 +157,16 @@
 		<img src={image} alt="Sample profile picture" loading="lazy" />
 	{/each}
 </div>
+<div class="cpt-container cpt-container--small text-center mt-12 md:mt-16">
+	<div>
+		{#each $json('somematerial.content2') as paragraph}
+			<p>{@html paragraph}</p>
+		{/each}
+	</div>
+	<Button href={$_('somematerial.button2.href')} classes="!block mt-5"
+		>{$_('somematerial.button2.title')}</Button
+	>
+</div>
 
 {#if loader}
 	<div class="cpt-loader">

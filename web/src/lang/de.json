@@ -80,7 +80,22 @@
         "instructions": "Lade hier ein Bild von dir hoch, damit wir dir dein Profilbild mit dem Klimademo-Logo erstellen können. Du kannst es dann direkt auf Facebook oder Twitter hochladen.",
         "filehere": "Datei hier ablegen",
         "or": "oder",
-        "success": "Bild herunterladen"
+        "success": "Bild herunterladen",
+        "content2": [
+            "Falls ihr Mobilisierungsmaterial (Poster, Flyer, Sticker, Buttons und Fahrradfahnen) bestellen möchtet, um die Materialien an eure Freund*innen, Familienmitglieder an Infoständen oder Quartierfesten zu verteilen, könnt ihr Bestellungen unter folgendem Link aufgeben: "
+        ],
+        "button2": {
+            "title": "Zum Bestellformular",
+            "href": "https://form.typeform.com/to/ECALJsJx"
+        }
+    },
+    "supportchannel": {
+        "title": "Tritt unserem Support-Channel bei!",
+        "content": [
+            "Hast du ab und an Zeit, um die Mobilisierung zu unterstützen, beispielsweise indem du an Events Flyer verteilst, Grafiken auf deinen Social Media Kanälen teilst oder Plakate aufhängst? Dann komm in diesem WhatsApp Kanal:"
+        ],
+        "button": "Zum Support-Channel",
+        "href": "https://chat.whatsapp.com/EfOA9XuhcIY4DW5csxDXUs"
     },
     "faq": {
         "title": "Häufige Fragen",
@@ -194,6 +209,16 @@
                 "title": "Italienisches Logo",
                 "preview": "/images/logo-it.png",
                 "download": "/images/logo-it.png"
+            },
+            {
+                "title": "Mobilisirungspost Deutsch",
+                "preview": "/images/downloads/Instagram post - 139.png",
+                "download": "/images/downloads/Instagram post - 139.png"
+            },
+            {
+                "title": "Mobilisirungspost Französisch",
+                "preview": "/images/downloads/Instagram post - 147.png",
+                "download": "/images/downloads/Instagram post - 147.png"
             },
             {
                 "title": "Instagram Post Deutsch",

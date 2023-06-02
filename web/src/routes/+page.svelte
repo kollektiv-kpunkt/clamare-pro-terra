@@ -7,6 +7,7 @@
 	 * - Logos
 	 * - Strikemap
 	 * - SomeMaterial
+	 * - SupportChannel
 	 * - FAQ
 	 * - DetailSection
 	 * - Footer
@@ -17,6 +18,7 @@
 	import Logos from '../components/Logos.svelte';
 	import Strikemap from '../components/Strikemap.svelte';
 	import SomeMaterial from '../components/SomeMaterial.svelte';
+	import SupportChannel from '../components/SupportChannel.svelte';
 	import FAQ from '../components/FAQ.svelte';
 	import DetailSection from '../components/DetailSection.svelte';
 	import Footer from '../components/Footer.svelte';
@@ -35,6 +37,7 @@
 	<Logos />
 	<Strikemap />
 	<SomeMaterial />
+	<SupportChannel />
 	<FAQ />
 	<DetailSection />
 	<Footer />

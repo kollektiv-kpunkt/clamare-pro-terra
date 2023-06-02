@@ -80,7 +80,22 @@
         "instructions": "Télécharge ici une photo de toi pour que nous puissions créer ta photo de profil avec le logo de manif-climat. Tu peux ensuite la télécharger directement sur Facebook ou Twitter.",
         "filehere": "Déposer le fichier ici",
         "or": "ou",
-        "success": "Télécharger l'image"
+        "success": "Télécharger l'image",
+        "content2": [
+            "Si tu souhaites commander du matériel de mobilisation (affiches, flyers, autocollants, badges et drapeaux pour vélo) afin de le distribuer à tes ami*e*s, aux membres de ta famille, ou lors de stands d'information ou de fêtes de quartier, tu peux volontiers passer commande en cliquant sur le lien suivant :"
+        ],
+        "button2": {
+            "title": "Commander du matériel",
+            "href": "https://form.typeform.com/to/h5rrOK9b"
+        }
+    },
+    "supportchannel": {
+        "title": "Rejoins notre chat de support !",
+        "content": [
+            "As-tu un peu de temps libre ponctuellement pour soutenir la mobilisation, par exemple en distribuant des flyers lors d'événements, en partageant des visuels sur tes médias sociaux, ou encore en placardant des affiches ? Alors inscris-toi sur ce canal WhatsApp :"
+        ],
+        "button": "Rejoindre le chat",
+        "href": "https://chat.whatsapp.com/JOcu212Jlca555iyXJp3UV"
     },
     "faq": {
         "title": "Questions fréquentes",
@@ -194,6 +209,16 @@
                 "title": "Logo italien",
                 "preview": "/images/logo-it.png",
                 "download": "/images/logo-it.png"
+            },
+            {
+                "title": "Post de mobilisation français",
+                "preview": "/images/downloads/Instagram post - 147.png",
+                "download": "/images/downloads/Instagram post - 147.png"
+            },
+            {
+                "title": "Post de mobilisation allemand",
+                "preview": "/images/downloads/Instagram post - 139.png",
+                "download": "/images/downloads/Instagram post - 139.png"
             },
             {
                 "title": "Instagram Post français",
