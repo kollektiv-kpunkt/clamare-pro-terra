@@ -1,7 +1,26 @@
 <x-guest-layout>
     <h1 class="text-2xl !leading-none text-center font-black uppercase text-rose-500">{{$title}}</h1>
-    <form action="{{route('create.store')}}" method="POST">
+    <form action="{{route('create.store')}}" id="cpt-event-creation-form" method="POST">
         @csrf
+    <div class="mt-4 flex flex-wrap gap-y-2">
+        <x-input-label for="eventtype" :value="__('What would you like to organize?')" />
+        <div class="cpt-radio-group flex gap-x-1 w-full items-center">
+            <input type="radio" name="eventtype" id="event" value="event">
+            <label for="event" class="cpt-radio-button">{{__('Mobilization event before the Demo')}}</label>
+        </div>
+        <div class="cpt-radio-group flex gap-x-1 w-full items-center">
+            <input type="radio" name="eventtype" id="meetup" value="meetup">
+            <label for="meetup" class="cpt-radio-button">{{__('Meeting point')}}</label>
+        </div>
+        <div class="cpt-radio-group flex gap-x-1 w-full items-center">
+            <input type="radio" name="eventtype" id="hike" value="hike">
+            <label for="hike" class="cpt-radio-button">{{__('Joint hike')}}</label>
+        </div>
+        <div class="cpt-radio-group flex gap-x-1 w-full items-center">
+            <input type="radio" name="eventtype" id="bike" value="bike">
+            <label for="bike" class="cpt-radio-button">{{__('Joint bike ride')}}</label>
+        </div>
+    </div>
     <div class="mt-4">
         <x-input-label for="title" :value="__('Event Name')" />
         <x-text-input id="title" class="block mt-1 w-full" type="text" name="title" :value="old('title')" required autofocus />
@@ -19,30 +38,42 @@
         <p class="text-sm italic mt-2">{{__("Please describe your event briefly.")}}</p>
     </div>
     <div class="mt-4">
+        <x-input-label for="link" :value="__('Link to Chat or signup form')" />
+        <x-text-input type="url" id="link" class="block mt-1 w-full" name="link" :value="old('link')" required autofocus />
+        <x-input-error :messages="$errors->get('description')" class="mt-2" />
+        <p class="text-sm italic mt-2">{{__("Please provide a link to a chat-group or a form so people can signup to your event.")}}</p>
+    </div>
+    <div class="mt-4">
         <x-input-label for="location" :value="__('Location')" />
         <x-text-input id="location" class="block mt-1 w-full" type="text" name="location" onchange="lookupLocation()" :value="old('location')" autofocus required/>
         <x-input-error :messages="$errors->get('location')" class="mt-2" />
     </div>
     <div class="w-full my-6">
         <div id="creation-map" class="aspect-square w-full"></div>
+        <p id="map-helper-default" class="cpt-map-helper text-sm italic mt-2">{{__("Please select a location for where your event will be held or your meeting point will be.")}}</p>
+        <p id="map-helper-hike-bike" class="cpt-map-helper text-sm italic mt-2" hidden>{{__("Please select a starting point and provide a route where you will be traveling by drawing a line with the tool on the left.")}}</p>
     </div>
     <input type="hidden" name="latitude" id="creation-latitude">
     <input type="hidden" name="longitude" id="creation-longitude">
+    <input type="hidden" name="polyline" id="creation-polyline">
+
     <div class="mt-4">
         <x-input-label for="user_email" :value="__('E-mail')" />
         <x-text-input id="user_email" class="block mt-1 w-full" type="email" name="user_email" :value="old('user_email')" autofocus placeholder="optional"/>
         <x-input-error :messages="$errors->get('user_email')" class="mt-2" />
-        <p class="text-sm italic mt-2">{{__("If you want to be able to edit this entry in the future, please provide an email address so that we can either create a user for you or assign this event to an existing user.")}}</p>
+        <p id="email-helper-default" class="text-sm italic mt-2">{{__("If you want to be able to edit this entry in the future, please provide an email address so that we can either create a user for you or assign this event to an existing user.")}}</p>
+        <p id="email-helper-hike-bike" class="text-sm italic mt-2" hidden>{{__("Please provide an e-mail address so we can contact you in the future about your journey :)")}}</p>
     </div>
-    <input type="hidden" name="type" value="{{$type}}"">
     <div class="mt-8 flex justify-end">
         <x-primary-button type="submit" class="w-full">{{__('Create Event')}}</x-primary-button>
     </div>
 
     <!-- Mapfunctions -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-        <script type="module">
-        import * as L from "https://unpkg.com/leaflet/dist/leaflet-src.esm.js";
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" crossorigin="" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+        <script>
 
 
         const map = L.map('creation-map').fitBounds([[45.7769477403, 6.02260949059], [47.8308275417, 10.4427014502]]);
@@ -59,6 +90,35 @@
         const marker = L.marker(markerLatLong, {
             draggable: true
         }).addTo(map);
+
+        var drawnItems = new L.FeatureGroup();
+        map.addLayer(drawnItems);
+        var drawControl = new L.Control.Draw({
+            draw: {
+                marker: false,
+                polygon: false,
+                rectangle: false,
+                circle: false,
+                circlemarker: false
+            },
+            edit: {
+                featureGroup: drawnItems
+            }
+        });
+
+        map.on("draw:created", storePolyline);
+        map.on("draw:edited", storePolyline);
+
+        function storePolyline(e) {
+            let layer = e.layer;
+            if (!layer) {
+                layer = e.layers.getLayers()[0];
+            }
+            console.log(layer);
+            drawnItems.addLayer(layer);
+            let polyline = layer.toGeoJSON();
+            document.getElementById('creation-polyline').value = JSON.stringify(polyline);
+        }
 
         document.getElementById('creation-latitude').value = markerLatLong[0];
         document.getElementById('creation-longitude').value = markerLatLong[1];
@@ -80,6 +140,38 @@
         });
 
         window.marker = marker;
+
+        function typeChange(value) {
+            switch (value) {
+                case "hike":
+                case "bike":
+                    map.addControl(drawControl);
+                    document.querySelector("[name=polyline]").required = true;
+                    document.getElementById('map-helper-default').hidden = true;
+                    document.getElementById('map-helper-hike-bike').hidden = false;
+                    document.getElementById('email-helper-default').hidden = true;
+                    document.getElementById('email-helper-hike-bike').hidden = false;
+                    document.querySelector("[name=user_email]").required = true;
+                    document.querySelector("[name=user_email]").placeholder = "";
+                    break;
+                default:
+                    map.removeControl(drawControl);
+                    document.querySelector("[name=polyline]").required = false;
+                    document.getElementById('map-helper-default').hidden = false;
+                    document.getElementById('map-helper-hike-bike').hidden = true;
+                    document.getElementById('email-helper-default').hidden = false;
+                    document.getElementById('email-helper-hike-bike').hidden = true;
+                    document.querySelector("[name=user_email]").required = false;
+                    document.querySelector("[name=user_email]").placeholder = "optional";
+                    break;
+            }
+        }
+
+        document.querySelectorAll("input[name=eventtype]").forEach((input) => {
+            input.addEventListener("change", (e) => {
+                typeChange(e.target.value);
+            });
+        });
         </script>
 
         <script>
@@ -146,6 +238,25 @@
                 loader.remove();
             }, 500);
         }
+
+        document.getElementById("cpt-event-creation-form").addEventListener("submit", cptFormValidation);
+
+        function cptFormValidation(form) {
+            let e = window.event;
+            let type = document.querySelector("[name=type]:checked").value;
+            let polyline = document.querySelector("[name=polyline]").value;
+            if ((type == "bike" || type == "hike") && polyline == "") {
+                let input = document.querySelector("[name=polyline]");
+                let alert = document.createElement('div');
+                alert.classList.add('cpt-alert');
+                alert.classList.add('red');
+                alert.innerHTML ="{{__('Please provide a route by drawing on the map with the tool on the left.')}}";
+                input.parentNode.insertBefore(alert, input);
+                input.setCustomValidity(`{!!__("Please provide a route by drawing on the map with the tool on the left.")!!}`);
+                e.preventDefault();
+            }
+        }
+
         </script>
 
         <style>

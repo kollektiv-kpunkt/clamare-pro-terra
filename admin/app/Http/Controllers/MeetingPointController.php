@@ -37,7 +37,9 @@ class MeetingPointController extends Controller
             "location" => 'required',
             "latitude" => 'required',
             "longitude" => 'required',
-            "type" => ""
+            "polyline" => '',
+            "eventtype" => "required",
+            "link" => "required"
         ]);
         $validated['user_id'] = auth()->user()->id;
         MeetingPoint::create($validated);
@@ -72,7 +74,9 @@ class MeetingPointController extends Controller
             "location" => 'required',
             "latitude" => 'required',
             "longitude" => 'required',
-            "type" => ""
+            "polyline" => '',
+            "eventtype" => "",
+            "link" => "required"
         ]);
         $meetingPoint->update($validated);
         return redirect()->route('meeting_points.index');
@@ -108,20 +112,11 @@ class MeetingPointController extends Controller
     }
 
     /**
-     * API: Get all approved Entries.
-     */
-    public function apiGetMeetingpoints()
-    {
-        $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude")->where('approved', true)->where("type", "meeting_point")->whereDate("meeting_time", ">", now())->get();
-        return response()->json($meetingPoints);
-    }
-
-    /**
      * API: Get all approved Events.
      */
     public function apiGetEvents()
     {
-        $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude")->where('approved', true)->where("type", "event")->whereDate("meeting_time", ">", now())->get();
+        $meetingPoints = MeetingPoint::select("title", "description", "meeting_time", "location", "latitude", "longitude", "polyline", "eventtype", "link")->where('approved', true)->whereDate("meeting_time", ">", now())->get();
         return response()->json($meetingPoints);
     }
 
@@ -164,6 +159,9 @@ class MeetingPointController extends Controller
             "location" => 'required',
             "latitude" => 'required',
             "longitude" => 'required',
+            "polyline" => '',
+            "eventtype" => "required",
+            "link" => "required"
         ]);
         $validated['user_id'] = $userId;
         $meetingPoint = MeetingPoint::create($validated);

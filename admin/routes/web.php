@@ -41,6 +41,13 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::prefix("create")->group(function(){
+
+    Route::get("/", function(){
+        return view("create.form", [
+            "title" => __("Help us mobilize for the Demonstration!")
+        ]);
+    })->name("create.index");
+
     Route::get("/event", function(){
         return view("create.form", [
             "title" => __("Create a mobilisation event for the Climate-Demonstration in September!"),

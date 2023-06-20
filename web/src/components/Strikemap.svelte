@@ -30,44 +30,10 @@
 	});
 
 	onMount(async () => {
-		const response = await fetch('https://strikemap.klima-demo.ch/api/meetingpoints');
+		const response = await fetch('https://cpt-admin.ddev.site/api/events');
 		const data = await response.json();
-		addMeetingpoints(data);
-
-		const response2 = await fetch('https://strikemap.klima-demo.ch/api/events');
-		const data2 = await response2.json();
-		addEvents(data2);
+		addEvents(data);
 	});
-
-	let meetingPoints = [];
-	function addMeetingpoints(markers) {
-		markers.forEach((marker) => {
-			let markerOptions = {
-				title: marker.title,
-				icon: L.icon({
-					iconUrl: '/images/markers/meetingpoint-icon.png',
-					iconSize: [50, 50],
-					iconAnchor: [25, 50],
-					popupAnchor: [0, -50]
-				})
-			};
-			let item = L.marker([marker.latitude, marker.longitude], markerOptions).addTo(map);
-			item.addEventListener('click', () => {
-				meetingPoints.forEach((marker) => {
-					if (marker != item) {
-						marker.zoom = false;
-					}
-				});
-				map.flyTo([marker.latitude, marker.longitude], 17, {
-					duration: 1
-				});
-				setTimeout(() => {
-					openPopup(marker);
-				}, 1200);
-			});
-			meetingPoints.push(item);
-		});
-	}
 
 	let events = [];
 	function addEvents(markers) {
@@ -75,13 +41,17 @@
 			let markerOptions = {
 				title: marker.title,
 				icon: L.icon({
-					iconUrl: '/images/markers/event-icon.png',
+					iconUrl: `/images/markers/${marker.eventtype}-icon.png`,
 					iconSize: [50, 50],
 					iconAnchor: [25, 50],
 					popupAnchor: [0, -50]
 				})
 			};
 			let item = L.marker([marker.latitude, marker.longitude], markerOptions).addTo(map);
+			if (marker.polyline) {
+				console.log(marker.polyline);
+				let polyline = L.geoJSON(JSON.parse(marker.polyline)).addTo(map);
+			}
 			item.addEventListener('click', () => {
 				events.forEach((marker) => {
 					if (marker != item) {
@@ -96,18 +66,6 @@
 				}, 1200);
 			});
 			events.push(item);
-		});
-	}
-
-	function removeMeetingpoints() {
-		meetingPoints.forEach((marker) => {
-			map.removeLayer(marker);
-		});
-	}
-
-	function removeEvents() {
-		events.forEach((marker) => {
-			map.removeLayer(marker);
 		});
 	}
 
@@ -165,13 +123,8 @@
 					{#each $json('strikemap.content') as content}
 						<p>{content}</p>
 					{/each}
-					<Button href="https://strikemap.klima-demo.ch/create/meetingpoint" classes="!block mt-5"
+					<Button href="https://strikemap.klima-demo.ch/create" classes="!block mt-5"
 						>{$_('strikemap.buttons.meetingpoint')}</Button
-					>
-					<Button
-						href="https://strikemap.klima-demo.ch/create/event"
-						color="white"
-						classes="!block mt-1">{$_('strikemap.buttons.event')}</Button
 					>
 				</div>
 			</div>
