@@ -30,7 +30,7 @@
 	});
 
 	onMount(async () => {
-		const response = await fetch('https://cpt-admin.ddev.site/api/events');
+		const response = await fetch('https://strikemap.klima-demo.ch/api/events');
 		const data = await response.json();
 		addEvents(data);
 	});
