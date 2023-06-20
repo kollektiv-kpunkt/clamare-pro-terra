@@ -74,6 +74,7 @@
 		popup.title = item.title;
 		popup.description = item.description;
 		popup.location = item.location;
+		popup.link = item.link;
 	}
 
 	function closePopup() {
@@ -114,6 +115,11 @@
 							<h3 class="text-2xl">{popup.title}</h3>
 							<p class="mt-4">{popup.description}</p>
 							<p class="mt-2">{popup.location}</p>
+							<p class="mt-2">
+								<a href={popup.link} class="underline" target="_blank"
+									>{$_('heroine.buttons.more')}</a
+								>
+							</p>
 							<i
 								class="icofont-close-circled absolute top-2 left-2 text-xl"
 								on:click={closePopup}
