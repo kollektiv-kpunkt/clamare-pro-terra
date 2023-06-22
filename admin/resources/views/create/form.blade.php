@@ -10,15 +10,15 @@
         </div>
         <div class="cpt-radio-group flex gap-x-1 w-full items-center">
             <input type="radio" name="eventtype" id="meetup" value="meetup">
-            <label for="meetup" class="cpt-radio-button">{{__('Meeting point')}}</label>
+            <label for="meetup" class="cpt-radio-button">{{__('Joint train ride to the demonstration')}}</label>
         </div>
         <div class="cpt-radio-group flex gap-x-1 w-full items-center">
             <input type="radio" name="eventtype" id="hike" value="hike">
-            <label for="hike" class="cpt-radio-button">{{__('Joint hike')}}</label>
+            <label for="hike" class="cpt-radio-button">{{__('Joint hike to the demonstration')}}</label>
         </div>
         <div class="cpt-radio-group flex gap-x-1 w-full items-center">
             <input type="radio" name="eventtype" id="bike" value="bike">
-            <label for="bike" class="cpt-radio-button">{{__('Joint bike ride')}}</label>
+            <label for="bike" class="cpt-radio-button">{{__('Joint bike ride to the demonstration')}}</label>
         </div>
     </div>
     <div class="mt-4">
