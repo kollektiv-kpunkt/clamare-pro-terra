@@ -10,11 +10,12 @@ addMessages("fr", fr);
 addMessages("it", it);
 
 let domains = {
+    "localhost:5173": "it",
     "pn82.kpunkt.ch": "de",
     "fr.pn82.kpunkt.ch": "fr",
     "klima-demo.ch": "de",
     "manif-climat.ch": "fr",
-    "localhost:5173": "it"
+    "manifestazione-clima.ch": "it"
 }
 
 export async function load(page) {
