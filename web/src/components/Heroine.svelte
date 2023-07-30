@@ -280,7 +280,8 @@
 						}
 					}
 
-					&--fr {
+					&--fr,
+					&--it {
 						.cpt-heroine__visual-inner__text {
 							&--title2 {
 								top: 45%;

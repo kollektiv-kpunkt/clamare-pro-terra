@@ -44,3 +44,9 @@
         }
     }
 }
+
+html[lang='it'] {
+    .cpt-intro-share {
+        grid-template-columns: 1fr;
+    }
+}

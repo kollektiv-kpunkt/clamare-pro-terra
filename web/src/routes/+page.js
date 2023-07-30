@@ -3,16 +3,18 @@ import { page } from "$app/stores";
 
 import de from "../lang/de.json";
 import fr from "../lang/fr.json";
+import it from "../lang/it.json";
 
 addMessages("de", de);
 addMessages("fr", fr);
+addMessages("it", it);
 
 let domains = {
     "pn82.kpunkt.ch": "de",
     "fr.pn82.kpunkt.ch": "fr",
     "klima-demo.ch": "de",
     "manif-climat.ch": "fr",
-    "localhost:5173": "fr"
+    "localhost:5173": "it"
 }
 
 export async function load(page) {

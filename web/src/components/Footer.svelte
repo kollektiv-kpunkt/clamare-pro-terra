@@ -21,6 +21,10 @@
 		fr: {
 			title: 'de',
 			href: 'https://klima-demo.ch'
+		},
+		it: {
+			title: 'it',
+			href: 'https://manifestazione-clima.ch/'
 		}
 	};
 

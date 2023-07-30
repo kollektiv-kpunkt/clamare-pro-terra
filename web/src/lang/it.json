@@ -1,0 +1,240 @@
+{
+    "__": "https://manifestazione-clima.ch",
+    "og": {
+        "title": "Manifestazione per il clima | AGIAMO ORA!",
+        "description": "Il 30 settembre, quindi, scenderemo in piazza insieme per la giustizia climatica. Siate presenti!"
+    },
+    "heroine": {
+        "visual": {
+            "cta": "AGIAMO<br>ORA!",
+            "title1": "Demo<br>clima",
+            "title2": "30.09.<br>Berna",
+            "date": "Bollwerk<br>14:00"
+        },
+        "title": "Manifestazione nazionale per il clima a Berna il 30 settembre",
+        "content": "Le conseguenze catastrofiche della crisi climatica sono sempre più visibili. Per poter rispettare l’accordo di Parigi sul clima, dobbiamo agire adesso. Per questo motivo, il 30 settembre andremo insieme a manifestare per la giustizia climatica.",
+        "buttons": {
+            "cta": "Partecipa",
+            "more": "Scopri di più"
+        }
+    },
+    "intro": {
+        "title": "AGIAMO ORA!",
+        "content": [
+            "Il movimento per il clima ha cercato, per molti anni, di convincere il nostro governo, le banche svizzere, le grandi aziende devastanti per il clima e altre industrie che causano importanti emissioni ad agire con misure concrete a favore del clima.",
+            "Il movimento per il clima ha portato molte persone a un cambio di mentalità. Persone coraggiose provano nuove vie e in molti settori si cercano e trovano soluzioni rispettose dell’ambiente. Tuttavia, è ancora troppo poco e il tempo per passi prudenti è scaduto! Ora vogliamo finalmente vedere i fatti.",
+            "<b>Ci faremo sentire, finché non riusciremo a vivere in una società rispettosa dell’ambiente. Perché arrendersi e non far nulla è un privilegio che molte persone, che già oggi soffrono a causa della crisi climatica, non hanno.</b>"
+        ],
+        "content2": {
+            "lead": "Per questo motivo andremo insieme a manifestare il 30 settembre.",
+            "listitems": [
+                "Chiediamo <b>protezione immediata dell’ambiente!</b>",
+                "Chiediamo <b>giustizia climatica!</b>",
+                "Chiediamo che <b>i/le grandi responsabili della crisi climatica capiscano la loro responsabilità!</b>",
+                "Chiediamo che <b>la politica dia finalmente priorità alla protezione dell’ambiente!</b>"
+            ],
+            "cta": "Vieni anche tu con noi il 30 settembre alle 14.00 a Berna! Quel giorno cammineremo insieme dal Bollwerk a Piazza federale, ascolteremo discorsi e concerti e pretenderemo una giustizia climatica. Poi, sulla Piazza federale ci saranno workshop, stand informativi, buon cibo e molto ancora. <b>Partecipa anche tu!</b>"
+        },
+        "sharebuttons": [
+            {
+                "type": "telegram",
+                "text": "Condividi con Telegram"
+            },
+            {
+                "type": "whatsapp",
+                "text": "Condividi con Whatsapp"
+            },
+            {
+                "type": "facebook",
+                "text": "Condividi su Facebook"
+            },
+            {
+                "type": "twitter",
+                "text": "Condividi su Twitter"
+            }
+        ],
+        "shareurl": "https://manifestazione-clima.ch",
+        "sharetext": "Ciao 🙋\nIl 30 settembre si terrà ancora una volta una grande manifestazione sul clima a Berna. Io ci vado, voi venite?"
+    },
+    "strikemap": {
+        "title": "Mappa della manifestazione",
+        "content": [
+            "Saranno organizzati dei viaggi collettivi da tutta la Svizzera. A piedi, in bicicletta o in treno: anche tu puoi fissare un luogo e un orario per incontrarsi e poi viaggiare a Berna in compagnia per partecipare alla manifestazione.",
+            "Puoi anche inserire sulla mappa tutti gli eventi di mobilitazione che hai in programma, che sia una distribuzione di volantini, l’allestimento di una bancarella o l’esposizione pubblica di cartelloni a sostegno della manifestazione."
+        ],
+        "buttons": {
+            "meetingpoint": "aiutaci anche tu!",
+            "event": "Mobilisierungsevent organisieren"
+        }
+    },
+    "somematerial": {
+        "title": "Aiutaci a mobilitare più gente!",
+        "content": [
+            "Abbiamo bisogno di te per portare più gente in strada verso Berna il 30 settembre: mobilitati sulle tue pagine social, distribuisci volantini, crea una piccola campagna di mobilitazione, allestisci una bancarella o parla con la tua cerchia di amicizie e famiglia della manifestazione.",
+            "<b>Crea la tua immagine del profilo o scarica i nostri modelli!</b>"
+        ],
+        "buttons": {
+            "profilepicture": "Crea la tua immagine del profilo",
+            "downloadmedia": "scarica i modelli"
+        },
+        "instructions": "Carica qui una tua foto per creare la tua immagine del profilo con il logo della manifestazione per il clima. Potrai quindi condividerla direttamente su Facebook o Instagram.",
+        "filehere": "Rilascia il file qui",
+        "or": "Oppure",
+        "success": "Scarica l'immagine",
+        "content2": [
+            "Clicca qui sotto per ordinare materiale di mobilitazione (manifesti, volantini, adesivi, spille e bandiere per biciclette) da distribuire ai tuoi amici e famigliari."
+        ],
+        "button2": {
+            "title": "Formulario di ordinazione",
+            "href": "https://form.typeform.com/to/ECALJsJx?typeform-source=klima-demo.ch"
+        }
+    },
+    "supportchannel": {
+        "title": "Aderisci alla nostra chat di supporto!",
+        "content": [
+            "Ti capita di avere del tempo libero per sostenere la mobilitazione, ad esempio distribuendo volantini agli eventi, condividendo immagini sui social media o affiggendo manifesti? Allora iscriviti a questo canale WhatsApp:"
+        ],
+        "button": "ADERISCI ALLA CHAT",
+        "href": "https://chat.whatsapp.com/JOcu212Jlca555iyXJp3UV"
+    },
+    "faq": {
+        "title": "DOMANDE FREQUENTI",
+        "questions": [
+            {
+                "question": "La manifestazione è autorizzata?",
+                "answer": "Sì, questa manifestazione è autorizzata."
+            },
+            {
+                "question": "La manifestazione è accessibile?",
+                "answer": "Purtroppo non possiamo ancora dare una risposta certa, ma ad agosto pubblicheremo un documento dettagliato sull’accessibilità. Se hai già domande o richieste specifiche, non esitare a contattarci. Vogliamo che la manifestazione sia il più accessibile possibile."
+            },
+            {
+                "question": "Come posso organizzare una trasferta di gruppo in bicicletta verso la manif?",
+                "answer": "Condividi la tua idea con i tuoi amici o sui social network, poi scegli il percorso migliore, pensa all’ora rio e al punto di partenza e all’attrezzatura di cui avrai bisogno (kit di riparazione, kit di pronto soccorso, ...). Poi puoi cercare di convincere quante più persone possibile a raggiungerti in bicicletta. Importante: pubblica il percorso sul sito web in modo che altre persone possano facilmente unirsi a te. A Berna metteremo a disposizione un buon parcheggio per le biciclette e ti faremo sapere dove si trova."
+            },
+            {
+                "question": "Come posso sostenere la manifestazione individualmente?",
+                "answer": "Abbiamo soprattutto bisogno di aiuto per la mobilitazione. Per esempio, potresti distribuire volantini, pubblicare grafici sui social network, gestire uno stand informativo o convincere la tua classe a venire alla manifestazione."
+            },
+            {
+                "question": "Come può la mia organizzazione sostenere questo evento?",
+                "answer": "Mettiti in contatto con noi per trovare insieme le soluzioni più adatte alla tua organizzazione. Abbiamo sempre bisogno di aiuto per la mobilitazione. C’è anche la possibilità di partecipare al “post manifestazione”, ad esempio organizzando un workshop, dando un contributo creativo o gestendo uno stand informativo."
+            },
+            {
+                "question": "Come si svolgerà il programma?",
+                "answer": "Ci incontreremo alle 14.00 al Bollwerk di Berna. In seguito, sfileremo in corteo per le strade di Berna fino alla Piazza federale, manifestando a gran voce. Qui ci aspetterà un programma variegato di discorsi, contributi creativi e concerti. Comunicheremo in un secondo tempo chi sarà presente tra gli artisti. Dopo la manifestazione, il programma continuerà con workshop, cibo, stand informativi e contributi creativi."
+            }
+        ]
+    },
+    "contact": {
+        "title": "CONTATTO",
+        "formFields": [
+            {
+                "name": "name",
+                "label": "QUAL È IL TUO NOME?",
+                "required": true
+            },
+            {
+                "name": "email",
+                "type": "email",
+                "label": "E IL TUO INDIRIZZO E-MAIL?",
+                "required": true
+            },
+            {
+                "name": "message",
+                "type": "textarea",
+                "label": "IL TUO MESSAGGIO",
+                "required": true
+            },
+            {
+                "name": "optin",
+                "type": "checkbox",
+                "label": "Sono d'accordo che il Manifestazione per il clima possa tenermi informato. <a href=\"https://www.klima-allianz.ch/datenschutzerklaerung/\" target=\"_blank\">Ulteriori informazioni sulla protezione dei dati.</a>",
+                "checked": true
+            }
+        ],
+        "success": "Grazie per il suo messaggio! Vi risponderemo al più presto.",
+        "error": "Ops, qualcosa è andato storto. Riprovare.",
+        "send": "Invia"
+    },
+    "donate": {
+        "title": "FARE UNA DONAZIONE",
+        "content": "Tutte le donazioni sono benvenute per contribuire a coprire i costi della manifestazione. Grazie per indicare la nota «klimademo» al momento della donazione.",
+        "details": [
+            "<b>Le nostre coordinate::</b>",
+            "Alternative Bank Schweiz,",
+            "4601 Olten",
+            "Numero di conto: 367.696.100-00",
+            "IBAN: CH41 0839 0036 7696 1000 0",
+            "BIC: ABSOCH22",
+            "Klima-Allianz Schweiz, Rue Fendt 1,",
+            "1201 Genf"
+        ],
+        "donateonline": "FAI UNA DONAZIONE ONLINE"
+    },
+    "footer": {
+        "newsletter": {
+            "title": "TIENITI AL CORRENTE!",
+            "content": "Iscriviti alla nostra newsletter per essere al corrente su tutte le novità concernenti la manifestazione per il clima di settembre!",
+            "email": "INDIRIZZO E-MAIL",
+            "success": "Grazie per esservi registrati!",
+            "error": "Ops, qualcosa è andato storto. Riprovare."
+        },
+        "links": [
+            {
+                "href": "https://www.klima-allianz.ch/datenschutzerklaerung",
+                "title": "PROTEZIONE DEI DATI"
+            },
+            {
+                "href": "https://www.klima-allianz.ch/impressum/",
+                "title": "Impressum"
+            }
+        ]
+    },
+    "downloadables": {
+        "title": "Scarica i nostri modelli",
+        "content": "Clicca su uno dei modelli per scaricarlo",
+        "materials": [
+            {
+                "title": "Logo in tedesco",
+                "preview": "/images/logo-de.png",
+                "download": "/images/logo-de.png"
+            },
+            {
+                "title": "Logo in francese",
+                "preview": "/images/logo-fr.png",
+                "download": "/images/logo-fr.png"
+            },
+            {
+                "title": "Logo in italiano",
+                "preview": "/images/logo-it.png",
+                "download": "/images/logo-it.png"
+            },
+            {
+                "title": "Post di mobilitazione in tedesco",
+                "preview": "/images/downloads/Instagram post - 139.png",
+                "download": "/images/downloads/Instagram post - 139.png"
+            },
+            {
+                "title": "Post di mobilitazione in francese",
+                "preview": "/images/downloads/Instagram post - 147.png",
+                "download": "/images/downloads/Instagram post - 147.png"
+            },
+            {
+                "title": "Post su Instagram in tedesco",
+                "preview": "/images/downloads/instagrampost-de.png",
+                "download": "/images/downloads/instagrampost-de.png"
+            },
+            {
+                "title": "Post su Instagram in francese",
+                "preview": "/images/downloads/instagrampost-fr.png",
+                "download": "/images/downloads/instagrampost-fr.png"
+            },
+            {
+                "title": "Post su Instagram in italiano",
+                "preview": "/images/downloads/instagrampost-it.png",
+                "download": "/images/downloads/instagrampost-it.png"
+            }
+        ]
+    }
+}
