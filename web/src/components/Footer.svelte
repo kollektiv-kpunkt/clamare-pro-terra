@@ -95,7 +95,9 @@
 					{#each $json('footer.links') as link}
 						<a href={link.href} class="cpt-footer-link" target="_blank">{link.title}</a>
 					{/each}
-					<a href={lang.href} class="cpt-footer-link">{lang.title}</a>
+					{#each langs as lang}
+						<a href={lang.href} class="cpt-footer-link">{lang.title}</a>
+					{/each}
 				</div>
 			</div>
 		</div>
