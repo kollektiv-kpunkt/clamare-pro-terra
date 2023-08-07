@@ -13,20 +13,20 @@
 		notyf = new Notyf();
 	});
 
-	let langs = {
-		de: {
-			title: 'fr',
-			href: 'https://manif-climat.ch'
-		},
-		fr: {
+	let langs = [
+		{
 			title: 'de',
 			href: 'https://klima-demo.ch'
 		},
-		it: {
+		{
+			title: 'fr',
+			href: 'https://manif-climat.ch'
+		},
+		{
 			title: 'it',
 			href: 'https://manifestazione-clima.ch/'
 		}
-	};
+	];
 
 	let lang = langs[$locale];
 
