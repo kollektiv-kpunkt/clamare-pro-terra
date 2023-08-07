@@ -15,7 +15,9 @@ let domains = {
     "fr.pn82.kpunkt.ch": "fr",
     "klima-demo.ch": "de",
     "manif-climat.ch": "fr",
-    "manifestazione-clima.ch": "it"
+    "www.manif-climat.ch": "fr",
+    "manifestazione-clima.ch": "it",
+    "www.manifestazione-clima.ch": "it"
 }
 
 export async function load(page) {
