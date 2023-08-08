@@ -39,7 +39,7 @@
     </div>
     <div class="mt-4">
         <x-input-label for="link" :value="__('Link to Chat or signup form')" />
-        <x-text-input type="url" id="link" class="block mt-1 w-full" name="link" :value="old('link')" required autofocus />
+        <x-text-input type="url" id="link" class="block mt-1 w-full" name="link" :value="old('link')" autofocus />
         <x-input-error :messages="$errors->get('description')" class="mt-2" />
         <p class="text-sm italic mt-2">{{__("Please provide a link to a chat-group or a form so people can signup to your event.")}}</p>
     </div>

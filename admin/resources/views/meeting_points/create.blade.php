@@ -7,7 +7,7 @@
             <x-form-group name="eventtype" :label="__('Entry Type')" :required="true" :value="old('eventtype')" :fullwidth="true" type="select" :options="['event', 'meetup', 'hike', 'bike']"/>
             <x-form-group name="title" :label="__('Title')" :required="true" :value="old('title')" :fullwidth="true"/>
             <x-form-group name="description" :label="__('Description')" :required="true" :value="old('description')" :fullwidth="true" type="textarea"/>
-            <x-form-group name="link" :label="__('Link to chat or form')" :required="true" :value="old('link')" :fullwidth="true" type="url"/>
+            <x-form-group name="link" :label="__('Link to chat or form')" :value="old('link')" :fullwidth="true" type="url"/>
             <x-form-group name="meeting_time" :label="__('Meeting Time')" :required="true" :value="old('meeting_time')" :fullwidth="true" type="datetime-local"/>
             <x-form-group onchange="lookupLocation()" name="location" :label="__('Location')" :required="true" :value="old('location')" :fullwidth="true"/>
             <div class="w-full my-6">
