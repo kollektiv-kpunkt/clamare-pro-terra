@@ -39,7 +39,7 @@ class MeetingPointController extends Controller
             "longitude" => 'required',
             "polyline" => '',
             "eventtype" => "required",
-            "link" => "required"
+            "link" => ""
         ]);
         $validated['user_id'] = auth()->user()->id;
         MeetingPoint::create($validated);
@@ -76,7 +76,7 @@ class MeetingPointController extends Controller
             "longitude" => 'required',
             "polyline" => '',
             "eventtype" => "",
-            "link" => "required"
+            "link" => ""
         ]);
         $meetingPoint->update($validated);
         return redirect()->route('meeting_points.index');
@@ -161,7 +161,7 @@ class MeetingPointController extends Controller
             "longitude" => 'required',
             "polyline" => '',
             "eventtype" => "required",
-            "link" => "required"
+            "link" => ""
         ]);
         $validated['user_id'] = $userId;
         $meetingPoint = MeetingPoint::create($validated);
