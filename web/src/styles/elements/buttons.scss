@@ -1,0 +1,32 @@
+.cpt-button {
+    padding: 0.5em 1em 0.4em;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
+    background-color: theme('colors.accent');
+    color: theme('colors.white');
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.02;
+    font-size: 1.25rem;
+
+    @media (max-width: 767px) {
+        font-size: 1rem;
+    }
+
+    &--white {
+        background-color: theme('colors.white');
+        color: theme('colors.accent');
+    }
+
+    &--outline {
+        background-color: theme('colors.white');
+        border: 2px solid theme('colors.accent');
+        color: theme('colors.accent');
+
+        &:hover {
+            background-color: theme('colors.accent');
+            color: theme('colors.white');
+        }
+    }
+}
