@@ -46,7 +46,11 @@
 					<div class="cpt-material-item">
 						<div class="p-1 md:p-2 bg-white">
 							<a href={downloadable.download} download={downloadable.download.split('/').pop()}>
-								<img src={downloadable.preview} alt={downloadable.title} />
+								<img
+									src={downloadable.preview}
+									alt={downloadable.title}
+									class="aspect-square object-contain"
+								/>
 							</a>
 						</div>
 						<p class="mt-2">{downloadable.title}</p>

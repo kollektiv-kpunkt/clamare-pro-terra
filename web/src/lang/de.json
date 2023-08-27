@@ -62,10 +62,18 @@
             "Aus der ganzen Schweiz werden gemeinsame Anfahrten organisiert. Egal ob zu Fuss, mit dem Fahrrad oder mit dem Zug: auch du kannst ein Treffpunkt und eine Uhrzeit festlegen und dann gemeinsam mit anderen zur Demonstration nach Bern fahren.",
             "Zudem kannst du auf dieser Karte alle Mobilisierungsevents, die du planst, eintragen, egal ob du Flyer verteilen gehst, einen Infostand machst oder ein öffentliches Plakatemalen für die Demonstration organisierst."
         ],
+        "place": "Ort",
+        "date": "Datum",
         "buttons": {
             "meetingpoint": "Ich helfe mit!",
             "event": "Mobilisierungsevent organisieren"
-        }
+        },
+        "postmap": [
+            "Für die Klimademo organisiert die SBB sechs Extrazüge aus der ganzen Schweiz und es können Sparbillette mit einer Vergünstigung von bis zu 70% gekauft werden. Kauf jetzt dein Sparticket unter sbb.ch.",
+            "<a href=\"https://www.klima-allianz.ch/wp-content/uploads/Extrazuege_Klimademo_30.09.23.pdf\" target=\"_blank\" class=\"cpt-button cpt-button--accent cpt-button--md cpt-button--solid text-center cpt-button--inline !block mt-5 mb-6 s-NMyTiX1zi6rz\">Zum Fahrplan</a>",
+            "Möchtest du gerne nach Bern an die Demonstration kommen aber kannst das Billett nicht bezahlen? Wir können einigen Personen das Billett rückerstatten. Die Anfragen werden laufend bearbeitet und du bekommst jeweils einige Tage nach dem Ausfüllen des Formulars Bescheid, ob wir die Kosten übernehmen können.",
+            "<a href=\"https://form.typeform.com/to/gzgR4TKE\" target=\"_blank\" class=\"cpt-button cpt-button--accent cpt-button--md cpt-button--solid text-center cpt-button--inline !block mt-5 s-NMyTiX1zi6rz\">Zum Formular</a>"
+        ]
     },
     "somematerial": {
         "title": "Hilf mit beim mobilisieren!",
@@ -209,6 +217,66 @@
                 "title": "Italienisches Logo",
                 "preview": "/images/logo-it.png",
                 "download": "/images/logo-it.png"
+            },
+            {
+                "title": "Push Video Deutsch",
+                "preview": "/videos/preview.png",
+                "download": "/videos/push video deutsch_hoch.mp4"
+            },
+            {
+                "title": "Push Video Französisch",
+                "preview": "/videos/preview.png",
+                "download": "/videos/Push video Français_hoch.mp4"
+            },
+            {
+                "title": "E-Mail Banner Deutsch",
+                "preview": "/images/downloads/E-Mail Banner.jpg",
+                "download": "/images/downloads/E-Mail Banner.jpg"
+            },
+            {
+                "title": "Flyer Vorderseite Deutsch",
+                "preview": "/images/downloads/FlyervorderseiteDE (42).png",
+                "download": "/images/downloads/FlyervorderseiteDE (42).png"
+            },
+            {
+                "title": "Flyer Vorderseite Französisch",
+                "preview": "/images/downloads/Fylervorderseite1FR (16).png",
+                "download": "/images/downloads/Fylervorderseite1FR (16).png"
+            },
+            {
+                "title": "Flyer Vorderseite Italienisch",
+                "preview": "/images/downloads/FlyervorderseiteIT (5).png",
+                "download": "/images/downloads/FlyervorderseiteIT (5).png"
+            },
+            {
+                "title": "Instagram Story Deutsch",
+                "preview": "/images/downloads/Instagram story - 16.png",
+                "download": "/images/downloads/Instagram story - 16.png"
+            },
+            {
+                "title": "Instagram Story Französisch",
+                "preview": "/images/downloads/Instagram story - 17.png",
+                "download": "/images/downloads/Instagram story - 17.png"
+            },
+            {
+                "title": "Instagram Story Italienisch",
+                "preview": "/images/downloads/Instagram story - 18 (1).png",
+                "download": "/images/downloads/Instagram story - 18 (1).png"
+            },
+            {
+                "title": "Twitter Header Deutsch",
+                "preview": "/images/downloads/Twitter header - 1 (5).png",
+                "download": "/images/downloads/Twitter header - 1 (5).png"
+            },
+            {
+                "title": "Twitter Header Französisch",
+                "preview": "/images/downloads/Twitter header - 9 (2).png",
+                "download": "/images/downloads/Twitter header - 9 (2).png"
+            },
+            {
+                "title": "Twitter Header Italienisch",
+                "preview": "/images/downloads/Twitter header - 10 (2).png",
+                "download": "/images/downloads/Twitter header - 10 (2).png"
             },
             {
                 "title": "Mobilisirungspost Deutsch",

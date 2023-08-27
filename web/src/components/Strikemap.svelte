@@ -75,6 +75,7 @@
 		popup.description = item.description;
 		popup.location = item.location;
 		popup.link = item.link;
+		popup.date = new Date(item.meeting_time).toLocaleString();
 	}
 
 	function closePopup() {
@@ -114,7 +115,8 @@
 						<div class="p-4 bg-accent text-white mb-8 relative">
 							<h3 class="text-2xl">{popup.title}</h3>
 							<p class="mt-4">{popup.description}</p>
-							<p class="mt-2">{popup.location}</p>
+							<p class="mt-2"><b>{$_('strikemap.place')}:</b> {popup.location}</p>
+							<p class="mt-2"><b>{$_('strikemap.date')}:</b> {popup.date}</p>
 							<p class="mt-2">
 								<a href={popup.link} class="underline" target="_blank"
 									>{$_('heroine.buttons.more')}</a
@@ -127,13 +129,18 @@
 						</div>
 					{/if}
 					{#each $json('strikemap.content') as content}
-						<p>{content}</p>
+						<p>{@html content}</p>
 					{/each}
 					<Button href="https://strikemap.klima-demo.ch/create" classes="!block mt-5"
 						>{$_('strikemap.buttons.meetingpoint')}</Button
 					>
 				</div>
 			</div>
+		</div>
+		<div class="cpt-container cpt-container--small cpt-strikemap mt-12">
+			{#each $json('strikemap.postmap') as content}
+				<p>{@html content}</p>
+			{/each}
 		</div>
 	</Section>
 </div>

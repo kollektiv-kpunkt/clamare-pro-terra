@@ -62,10 +62,18 @@
             "Saranno organizzati dei viaggi collettivi da tutta la Svizzera. A piedi, in bicicletta o in treno: anche tu puoi fissare un luogo e un orario per incontrarsi e poi viaggiare a Berna in compagnia per partecipare alla manifestazione.",
             "Puoi anche inserire sulla mappa tutti gli eventi di mobilitazione che hai in programma, che sia una distribuzione di volantini, l’allestimento di una bancarella o l’esposizione pubblica di cartelloni a sostegno della manifestazione."
         ],
+        "place": "Luogo",
+        "date": "Data",
         "buttons": {
             "meetingpoint": "aiutaci anche tu!",
             "event": "Mobilisierungsevent organisieren"
-        }
+        },
+        "postmap": [
+            "Per la manifestazione, le FFS organizzano sei treni supplementari da tutta la Svizzera e potete acquistare i biglietti risparmio con uno sconto fino al 70%. Acquistate subito il vostro biglietto risparmio sul sito ffs.ch",
+            "<a href=\"https://www.klima-allianz.ch/wp-content/uploads/Extrazuege_Klimademo_30.09.23.pdf\" target=\"_blank\" class=\"cpt-button cpt-button--accent cpt-button--md cpt-button--solid text-center cpt-button--inline !block mt-5 mb-6 s-NMyTiX1zi6rz\">Orario</a>",
+            "Volete venire alla manifestazione di Berna ma non potete pagare il biglietto? Possiamo rimborsare il biglietto ad alcune persone. Le richieste vengono elaborate quotidianamente e riceverete conferma se possiamo coprire i costi solo pochi giorni dopo aver compilato il modulo.",
+            "<a href=\"https://form.typeform.com/to/vYhrXFPB\" target=\"_blank\" class=\"cpt-button cpt-button--accent cpt-button--md cpt-button--solid text-center cpt-button--inline !block mt-5 s-NMyTiX1zi6rz\">Modulo di rimborso</a>"
+        ]
     },
     "somematerial": {
         "title": "Aiutaci a mobilitare più gente!",
@@ -209,6 +217,66 @@
                 "title": "Logo in italiano",
                 "preview": "/images/logo-it.png",
                 "download": "/images/logo-it.png"
+            },
+            {
+                "title": "Push Video tedesco",
+                "preview": "/videos/preview.png",
+                "download": "/videos/push video deutsch_hoch.mp4"
+            },
+            {
+                "title": "Push Video francese",
+                "preview": "/videos/preview.png",
+                "download": "/videos/Push video Français_hoch.mp4"
+            },
+            {
+                "title": "Banner e-mail tedesco",
+                "preview": "/images/downloads/E-Mail Banner.jpg",
+                "download": "/images/downloads/E-Mail Banner.jpg"
+            },
+            {
+                "title": "Flyer anteriore italiano",
+                "preview": "/images/downloads/FlyervorderseiteIT (5).png",
+                "download": "/images/downloads/FlyervorderseiteIT (5).png"
+            },
+            {
+                "title": "Flyer anteriore tedesco",
+                "preview": "/images/downloads/FlyervorderseiteDE (42).png",
+                "download": "/images/downloads/FlyervorderseiteDE (42).png"
+            },
+            {
+                "title": "Flyer anteriore francese",
+                "preview": "/images/downloads/Fylervorderseite1FR (16).png",
+                "download": "/images/downloads/Fylervorderseite1FR (16).png"
+            },
+            {
+                "title": "Instagram Story italiano",
+                "preview": "/images/downloads/Instagram story - 18 (1).png",
+                "download": "/images/downloads/Instagram story - 18 (1).png"
+            },
+            {
+                "title": "Instagram Story tedesco",
+                "preview": "/images/downloads/Instagram story - 16.png",
+                "download": "/images/downloads/Instagram story - 16.png"
+            },
+            {
+                "title": "Instagram Story francese",
+                "preview": "/images/downloads/Instagram story - 17.png",
+                "download": "/images/downloads/Instagram story - 17.png"
+            },
+            {
+                "title": "Twitter Header italiano",
+                "preview": "/images/downloads/Twitter header - 10 (2).png",
+                "download": "/images/downloads/Twitter header - 10 (2).png"
+            },
+            {
+                "title": "Twitter Header tedesco",
+                "preview": "/images/downloads/Twitter header - 1 (5).png",
+                "download": "/images/downloads/Twitter header - 1 (5).png"
+            },
+            {
+                "title": "Twitter Header francese",
+                "preview": "/images/downloads/Twitter header - 9 (2).png",
+                "download": "/images/downloads/Twitter header - 9 (2).png"
             },
             {
                 "title": "Post di mobilitazione in tedesco",
