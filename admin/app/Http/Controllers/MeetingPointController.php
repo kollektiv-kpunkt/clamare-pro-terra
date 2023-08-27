@@ -138,6 +138,7 @@ class MeetingPointController extends Controller
                 $user = new User();
                 $user->name = $request->user_email;
                 $user->email = $request->user_email;
+                $user->email_verified_at = now();
                 $user->role = 'user';
                 $user->password = bcrypt(bin2hex(random_bytes(8)));
                 $user->approved = true;
