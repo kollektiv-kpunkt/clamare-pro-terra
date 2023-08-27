@@ -140,6 +140,7 @@ class MeetingPointController extends Controller
                 $user->email = $request->user_email;
                 $user->role = 'user';
                 $user->password = bcrypt(bin2hex(random_bytes(8)));
+                $user->approved = true;
                 $user->save();
                 \Illuminate\Support\Facades\Password::sendResetLink($user->only('email'));
                 $userId = $user->id;
