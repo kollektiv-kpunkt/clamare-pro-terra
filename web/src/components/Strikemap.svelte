@@ -75,7 +75,14 @@
 		popup.description = item.description;
 		popup.location = item.location;
 		popup.link = item.link;
-		popup.date = new Date(item.meeting_time).toLocaleString();
+		let date = new Date(item.meeting_time);
+		date.setHours(date.getHours() - 2);
+		popup.date = date.toLocaleString('de-CH', {
+			day: 'numeric',
+			month: 'numeric',
+			hour: 'numeric',
+			minute: 'numeric'
+		});
 	}
 
 	function closePopup() {
