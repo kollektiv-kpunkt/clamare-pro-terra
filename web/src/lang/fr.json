@@ -15,7 +15,8 @@
         "content": "Les conséquences catastrophiques de la crise climatique sont de plus en plus évidentes. Nous devons agir maintenant pour respecter l’Accord de Paris. C’est pourquoi nous descendrons dans la rue le 30 septembre pour réclamer la justice climatique.",
         "buttons": {
             "cta": "Participer",
-            "more": "Plus d'infos"
+            "more": "Plus d'infos",
+            "donate": "Faire un don"
         }
     },
     "intro": {
@@ -166,6 +167,7 @@
         "send": "Envoyer"
     },
     "donate": {
+        "anchor": "donner",
         "title": "Faire un don",
         "content": "Tout don est le bienvenu pour couvrir les dépenses liées à la manifestation.",
         "details": [

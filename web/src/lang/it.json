@@ -15,7 +15,8 @@
         "content": "Le conseguenze catastrofiche della crisi climatica sono sempre più visibili. Per poter rispettare l’accordo di Parigi sul clima, dobbiamo agire adesso. Per questo motivo, il 30 settembre andremo insieme a manifestare per la giustizia climatica.",
         "buttons": {
             "cta": "Partecipa",
-            "more": "Scopri di più"
+            "more": "Scopri di più",
+            "donate": "FARE UNA DONAZIONE"
         }
     },
     "intro": {
@@ -166,6 +167,7 @@
         "send": "Invia"
     },
     "donate": {
+        "anchor": "donare",
         "title": "FARE UNA DONAZIONE",
         "content": "Tutte le donazioni sono benvenute per contribuire a coprire i costi della manifestazione. Grazie per indicare la nota «klimademo» al momento della donazione.",
         "details": [

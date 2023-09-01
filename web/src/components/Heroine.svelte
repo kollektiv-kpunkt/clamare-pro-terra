@@ -133,9 +133,10 @@
 							{$_('heroine.content')}
 						</p>
 					</div>
-					<div class="mt-8 flex flex-col lg:flex-row gap-x-4 gap-y-2">
+					<div class="mt-8 flex flex-wrap flex-col lg:flex-row gap-x-4 gap-y-2">
 						<Button href="#support">{$_('heroine.buttons.cta')}</Button>
 						<Button color="outline" href="#more-info">{$_('heroine.buttons.more')}</Button>
+						<Button href="#{$_('donate.anchor')}">{$_('heroine.buttons.donate')}</Button>
 					</div>
 				</div>
 			</div>

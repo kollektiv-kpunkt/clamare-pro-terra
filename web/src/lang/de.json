@@ -15,7 +15,8 @@
         "content": "Die katastrophalen Auswirkungen der Klimakrise werden immer deutlicher sichtbar. Um das Pariser Klimaabkommen noch einhalten zu können, müssen wir jetzt handeln. Am 30. September gehen wir deswegen gemeinsam für Klimagerechtigkeit auf die Strasse.",
         "buttons": {
             "cta": "Mitmachen",
-            "more": "Mehr erfahren"
+            "more": "Mehr erfahren",
+            "donate": "Spenden"
         }
     },
     "intro": {
@@ -166,6 +167,7 @@
         "send": "Absenden"
     },
     "donate": {
+        "anchor": "spenden",
         "title": "Spenden",
         "content": "Wir sind dankbar über Spenden, um die Ausgaben für die Klimademo decken zu können. Bitte gebt bei den Spenden den Vermerk “Klimademo” an.",
         "details": [
