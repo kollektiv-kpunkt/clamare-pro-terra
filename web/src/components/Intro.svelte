@@ -72,6 +72,14 @@
 			{/each}
 		</div>
 	</div>
+	<div class="cpt-intro-content2 mt-10 md:mt-20 cpt-container cpt-container--small !px-0">
+		<h2 class="cpt-text-highlight text-3xl md:text-5xl">{$_('intro.program.title')}</h2>
+		<ul class="mt-12">
+			{#each $json('intro.program.list') as paragraph}
+				<li>{@html paragraph}</li>
+			{/each}
+		</ul>
+	</div>
 </Section>
 
 <style lang="scss">

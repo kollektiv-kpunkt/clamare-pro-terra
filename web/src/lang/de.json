@@ -55,7 +55,17 @@
             }
         ],
         "shareurl": "https://klima-demo.ch",
-        "sharetext": "Hoi 🙋\nAm 30. September findet in Bern wieder einmal eine grosse Klimademo statt. Ich geh hin, kommst du auch?"
+        "sharetext": "Hoi 🙋\nAm 30. September findet in Bern wieder einmal eine grosse Klimademo statt. Ich geh hin, kommst du auch?",
+        "program": {
+            "title": "Unser Programm",
+            "list": [
+                "<b>12:15 Uhr:</b> Podium Menschenrechte und Klimaschutz, <em>Predigergasse 3</em>",
+                "<b>12:45 Uhr:</b> ökumenisches Klimagebet, <em>Heiliggeistkirche</em>",
+                "<span class=\"text-accent\"><b>14:00 Uhr:</b> Demonstrationsstart, <em>Bollwerk</em></span>",
+                "<b>15:00 Uhr:</b> Reden und Konzerte auf dem <em>Bundesplatz</em>",
+                "<b>17:00 Uhr:</b> Essen und Stände auf dem <em>Waisenhausplatz</em>"
+            ]
+        }
     },
     "strikemap": {
         "title": "Demokarte",
@@ -115,7 +125,16 @@
             },
             {
                 "question": "Wie zugänglich ist die Demonstration?",
-                "answer": "Dies können wir zum jetzigen Stand leider noch nicht beantworten, wir werden jedoch im August ein ausführliches Dokument dazu veröffentlichen. Wenn du aber jetzt schon konkrete Wünsche oder Fragen hast, zögere nicht, uns zu kontaktieren. Wir wollen die Demonstration so zugänglich wie möglich gestalten."
+                "answer": [
+                    "Die Demo ist rollstuhlgängig (Untergrund: flach und fest)",
+                    "Ein gut erkennbares Care-Team wird mitlaufen und erreichbar sein",
+                    "Auf dem Bundesplatz wird ein Care-Zelt stehen: ihr könnt dorthin gehen, falls ihr euch während der Demo nicht wohl fühlt oder Ruhe braucht",
+                    "Du willst an die Demo kommen, weisst aber nicht mit wem? Dann komm an den Buddy Treffpunkt an der Neuengasse 40. Dort lernst du andere Menschen kennen und ihr könnt zusammen an die Demo gehen",
+                    "Falls du gerne eine ruhigere Demo geniessen möchtest, kannst du im Silent Block mitlaufen. Dort gibt es keine Musik und es werden keine Parolen gerufen.",
+                    "Die Reden werden in verschiedenen Sprachen gehalten",
+                    "Eine Übersetzung in Gebärdensprache ist vorhanden",
+                    "Zun Nachlesen werden die Reden auf der Webseite verfügbar sein"
+                ]
             },
             {
                 "question": "Wie organisiere ich eine gemeinsame Anfahrt mit dem Fahrrad an die Demonstration?",

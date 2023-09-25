@@ -54,7 +54,17 @@
             }
         ],
         "shareurl": "https://manif-climat.ch",
-        "sharetext": "Salut 🙋\nLe 30 septembre, une nouvelle grande manifestation pour le climat aura lieu à Berne. J'y vais, tu viens aussi ?"
+        "sharetext": "Salut 🙋\nLe 30 septembre, une nouvelle grande manifestation pour le climat aura lieu à Berne. J'y vais, tu viens aussi ?",
+        "program": {
+            "title": "Notre Programme",
+            "list": [
+                "<b>12:15:</b> Table ronde “Droits humains et protection du climat”, <em>Predigergasse 3</em>",
+                "<b>12:45:</b> Prière œcuménique pour le climat, <em>Heiliggeistkirche</em>",
+                "<span class=\"text-accent\"><b>14:00:</b> Départ de la manifestation, <em>Bollwerk</em></span>",
+                "<b>15:00:</b> Discours et concerts, <em>Place fédérale</em>",
+                "<b>17:00:</b> Repas et stands, <em>Waisenhausplatz</em>"
+            ]
+        }
     },
     "strikemap": {
         "title": "Carte manif",
@@ -114,8 +124,17 @@
                 "answer": "Oui, la manifestation est autorisée."
             },
             {
-                "question": "La manif est-elle accessible ?",
-                "answer": "Malheureusement, nous ne pouvons pas encore donner une réponse ferme, mais nous publierons un document détaillé sur l’accessibilité en août. Si tu as déjà des demandes concrètes ou des questions, n’hésite pas à nous contacter. Nous voulons que la manifestation soit aussi accessible que possible."
+                "question": "La manifestation est-elle accessible à toutes et tous ?",
+                "answer": [
+                    "La manifestation est accessible aux chaises roulantes (sol : plat et solide).",
+                    "Une équipe médicale facilement identifiable sera présente et joignable.",
+                    "Une tente médicale sera installée sur la Place fédérale : vous pourrez vous y rendre si vous ne vous sentez pas bien pendant la manifestation ou si vous avez besoin de calme.",
+                    "Tu veux venir à la manifestation, mais tu ne sais pas avec qui ? Alors viens au point de rencontre des buddies à la Neuengasse 40. Tu y rencontreras d'autres personnes et vous pourrez aller ensemble à la manifestation.",
+                    "Si tu souhaites profiter d'une manifestation plus calme, tu peux te joindre au Silent Block. Il n'y aura pas de musique et aucun slogan sera crié.",
+                    "Les discours seront tenus en différentes langues.",
+                    "Une traduction en langue des signes sera disponible.",
+                    "Les discours seront disponibles en version écrite sur le site web."
+                ]
             },
             {
                 "question": "Comment puis-je organiser une arrivée à vélo pour un groupe ?",

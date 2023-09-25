@@ -73,8 +73,27 @@
 		</span>
 		<div class="cpt-question-answer max-h-0 overflow-hidden" bind:this={answerDOM}>
 			<div class="cpt-question-answer-inner pt-4" bind:this={answerInner}>
-				<p>{question.answer}</p>
+				{#if typeof question.answer === 'object'}
+					<ul>
+						{#each question.answer as answer}
+							<li>{answer}</li>
+						{/each}
+					</ul>
+				{:else}
+					<p>{question.answer}</p>
+				{/if}
 			</div>
 		</div>
 	</div>
 </div>
+
+<style lang="scss">
+	ul {
+		list-style: disc;
+		margin-left: 1rem;
+
+		li + li {
+			margin-top: 0.5rem;
+		}
+	}
+</style>

@@ -10,7 +10,7 @@ addMessages("fr", fr);
 addMessages("it", it);
 
 let domains = {
-    "localhost:5173": "de",
+    "localhost:5173": "fr",
     "pn82.kpunkt.ch": "de",
     "fr.pn82.kpunkt.ch": "fr",
     "klima-demo.ch": "de",
