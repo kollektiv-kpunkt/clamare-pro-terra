@@ -181,6 +181,10 @@
                 "checked": true
             }
         ],
+        "media": {
+            "title": "Contacts pour les médias",
+            "content": "medien@klima-allianz.ch<br>+41 79 906 57 59"
+        },
         "success": "Merci pour ton message ! Nous te contacterons dès que possible.",
         "error": "Oups, quelque chose s'est mal passé. Veuillez réessayer.",
         "send": "Envoyer"

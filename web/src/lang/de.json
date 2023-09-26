@@ -181,6 +181,10 @@
                 "checked": true
             }
         ],
+        "media": {
+            "title": "Kontakte für Medienschaffende",
+            "content": "medien@klima-allianz.ch<br>+41 79 906 57 59"
+        },
         "success": "Danke für deine Nachricht! Wir melden uns so schnell wie möglich bei dir.",
         "error": "Ups, da ist etwas schief gelaufen. Bitte versuche es noch einmal.",
         "send": "Absenden"

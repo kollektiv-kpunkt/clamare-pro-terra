@@ -53,4 +53,6 @@
 			<Button tag="button" type="submit">{$_('contact.send')}</Button>
 		</div>
 	</form>
+	<h3 class="text-accent text-2xl mt-8">{$_('contact.media.title')}</h3>
+	<p>{@html $_('contact.media.content')}</p>
 </div>

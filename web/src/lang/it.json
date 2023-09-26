@@ -55,7 +55,17 @@
             }
         ],
         "shareurl": "https://manifestazione-clima.ch",
-        "sharetext": "Ciao 🙋\nIl 30 settembre si terrà ancora una volta una grande manifestazione sul clima a Berna. Io ci vado, voi venite?"
+        "sharetext": "Ciao 🙋\nIl 30 settembre si terrà ancora una volta una grande manifestazione sul clima a Berna. Io ci vado, voi venite?",
+        "program": {
+            "title": "Nostro Programma",
+            "list": [
+                "<b>12:15 Uhr:</b> Tavola rotonda “Diritti umani e protezione del clima”, <em>Predigergasse 3</em>",
+                "<b>12:45 Uhr:</b> Preghiera ecumenica per il clima, <em>chiesa Heiliggeistkirche</em>",
+                "<span class=\"text-accent\"><b>14:00 Uhr:</b> Inizio della manifestazione, <em>Bollwerk</em></span>",
+                "<b>15:00 Uhr:</b> Discorsi e concerti, <em>Piazza Federale</em>",
+                "<b>17:00 Uhr:</b> Cibo e bancarelle, <em>Waisenhausplatz</em>"
+            ]
+        }
     },
     "strikemap": {
         "title": "Mappa della manifestazione",
@@ -114,8 +124,17 @@
                 "answer": "Sì, questa manifestazione è autorizzata."
             },
             {
-                "question": "La manifestazione è accessibile?",
-                "answer": "Purtroppo non possiamo ancora dare una risposta certa, ma ad agosto pubblicheremo un documento dettagliato sull’accessibilità. Se hai già domande o richieste specifiche, non esitare a contattarci. Vogliamo che la manifestazione sia il più accessibile possibile."
+                "question": "La manifestazione è accessibile a tuttx?",
+                "answer": [
+                    "La manif è accessibile in sedia a rotelle (terreno: piano e solido)",
+                    "Un team medico facilmente riconoscibile sarà presente e raggiungibile",
+                    "Sulla Piazza Federale sarà montata una tenda medica: potrete recarvi qui se non vi sentite bene durante la manifestazione o avete bisogno di tranquillità",
+                    "Vuoi venire alla manif ma non sai ancora bene con chi? Allora vieni al punto di incontro buddies a Neuengasse 40. Lì incontrerai altre persone e potrete andare insieme alla manif.",
+                    "Se vuoi goderti una manif più calma puoi aggiungerti al Silent Block. Non ci sarà musica o slogan.",
+                    "I discorsi saranno tenuti in diverse lingue.",
+                    "Una traduzione in lingua dei segni sarà disponibile.",
+                    "I discorsi saranno disponibile in versione scritta sul sito web."
+                ]
             },
             {
                 "question": "Come posso organizzare una trasferta di gruppo in bicicletta verso la manif?",
@@ -162,6 +181,10 @@
                 "checked": true
             }
         ],
+        "media": {
+            "title": "Contatto per i media",
+            "content": "medien@klima-allianz.ch<br>+41 79 906 57 59"
+        },
         "success": "Grazie per il suo messaggio! Vi risponderemo al più presto.",
         "error": "Ops, qualcosa è andato storto. Riprovare.",
         "send": "Invia"
