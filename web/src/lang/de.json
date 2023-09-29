@@ -329,5 +329,22 @@
                 "download": "/images/downloads/instagrampost-it.png"
             }
         ]
+    },
+    "speeches": {
+        "title": "Reden an der Demo",
+        "content": "Hier findest du die Reden, die an der Demo gehalten wurden.",
+        "speech": "Rede",
+        "speeches": {
+            "science": "Wissenschaft",
+            "climate_justice": "Klimagerechtigkeit",
+            "health": "Gesundheit",
+            "right_to_protest": "Demonstrationsrecht",
+            "climate_strike_hope": "Klimastreik und Hoffnung",
+            "mobility": "Mobilität",
+            "unia": "Unia",
+            "energy_crisis": "Energiekrise",
+            "agriculture": "Landwirtschaft"
+        },
+        "all_speeches": "Alle Reden"
     }
 }

@@ -8,6 +8,7 @@
 	export let type = 'button';
 	export let classes = '';
 	export let onClick = false;
+	export let target = '_self';
 
 	let className = 'cpt-button';
 	className += ` cpt-button--${color}`;
@@ -28,7 +29,7 @@
 		</button>
 	{/if}
 {:else if tag == 'a'}
-	<a {href} class={className}>
+	<a {href} class={className} {target}>
 		<slot />
 	</a>
 {:else if tag == 'button'}

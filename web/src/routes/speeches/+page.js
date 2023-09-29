@@ -1,9 +1,9 @@
 import { init, _, json, addMessages, locale } from "svelte-i18n";
 import { page } from "$app/stores";
 
-import de from "../lang/de.json";
-import fr from "../lang/fr.json";
-import it from "../lang/it.json";
+import de from "../../lang/de.json";
+import fr from "../../lang/fr.json";
+import it from "../../lang/it.json";
 
 addMessages("de", de);
 addMessages("fr", fr);

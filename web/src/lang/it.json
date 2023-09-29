@@ -329,5 +329,22 @@
                 "download": "/images/downloads/instagrampost-it.png"
             }
         ]
+    },
+    "speeches": {
+        "title": "Discorsi alla manifestazione",
+        "content": "Qui potete trovare i discorsi tenuti durante la dimostrazione.",
+        "speech": "Discorso",
+        "speeches": {
+            "science": "Scienza",
+            "climate_justice": "Giustizia climatica",
+            "health": "Salute",
+            "right_to_protest": "Diritto di protesta",
+            "climate_strike_hope": "Sciopero climatico e speranza",
+            "mobility": "Mobilità",
+            "unia": "Unia",
+            "energy_crisis": "Crisi energetica",
+            "agriculture": "Agricoltura"
+        },
+        "all_speeches": "Tutti i discorsi"
     }
 }
