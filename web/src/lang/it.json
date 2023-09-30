@@ -65,7 +65,8 @@
                 "<b>15:00 Uhr:</b> Discorsi e concerti, <em>Piazza Federale</em>",
                 "<b>17:00 Uhr:</b> Cibo e bancarelle, <em>Waisenhausplatz</em>"
             ]
-        }
+        },
+        "read-speeches": "Leggi i discorsi"
     },
     "strikemap": {
         "title": "Mappa della manifestazione",

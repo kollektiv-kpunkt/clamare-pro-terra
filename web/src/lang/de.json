@@ -65,7 +65,8 @@
                 "<b>15:00 Uhr:</b> Reden und Konzerte auf dem <em>Bundesplatz</em>",
                 "<b>17:00 Uhr:</b> Essen und Stände auf dem <em>Waisenhausplatz</em>"
             ]
-        }
+        },
+        "read-speeches": "Reden lesen"
     },
     "strikemap": {
         "title": "Demokarte",

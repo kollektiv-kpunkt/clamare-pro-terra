@@ -64,7 +64,8 @@
                 "<b>15:00:</b> Discours et concerts, <em>Place fédérale</em>",
                 "<b>17:00:</b> Repas et stands, <em>Waisenhausplatz</em>"
             ]
-        }
+        },
+        "read-speeches": "Lire des discours"
     },
     "strikemap": {
         "title": "Carte manif",

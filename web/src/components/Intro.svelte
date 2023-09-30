@@ -79,6 +79,7 @@
 				<li>{@html paragraph}</li>
 			{/each}
 		</ul>
+		<Button classes="mt-12" href="/speeches">{$_('intro.read-speeches')}</Button>
 	</div>
 </Section>
 
