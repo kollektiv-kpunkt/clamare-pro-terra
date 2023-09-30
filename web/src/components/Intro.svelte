@@ -72,6 +72,20 @@
 			{/each}
 		</div>
 	</div>
+	<div class="max-w-xl my-16 md:my-24 mx-auto">
+		<h2 class="cpt-text-highlight text-3xl md:text-5xl mb-8 !block">{$_('intro.pictures')}</h2>
+		<a
+			data-flickr-embed="true"
+			href="https://www.flickr.com/photos/klima-allianz-ch/albums/72177720308156759"
+			title="Klimademo 30.09."
+			><img
+				src="https://live.staticflickr.com/65535/52884547816_e617b8e8ea_c.jpg"
+				width="800"
+				height="600"
+				alt="Klimademo 30.09."
+			/></a
+		><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+	</div>
 	<div class="cpt-intro-content2 mt-10 md:mt-20 cpt-container cpt-container--small !px-0">
 		<h2 class="cpt-text-highlight text-3xl md:text-5xl">{$_('intro.program.title')}</h2>
 		<ul class="mt-12">
