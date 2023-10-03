@@ -348,5 +348,19 @@
             "agriculture": "Agriculture"
         },
         "all_speeches": "Tous les discours"
+    },
+    "donatepage": {
+        "title": "Faire un don",
+        "lead": "Tout don est le bienvenu pour couvrir les dépenses liées à la manifestation.",
+        "details": [
+            "<b>Unsere Kontoangaben:</b>",
+            "Alternative Bank Schweiz,",
+            "4601 Olten",
+            "Konto-Nr. 367.696.100-00",
+            "IBAN: CH41 0839 0036 7696 1000 0",
+            "BIC: ABSOCH22",
+            "Klima-Allianz Schweiz, Rue Fendt 1,",
+            "1201 Genf"
+        ]
     }
 }

@@ -348,5 +348,19 @@
             "agriculture": "Agricoltura"
         },
         "all_speeches": "Tutti i discorsi"
+    },
+    "donatepage": {
+        "title": "FARE UNA DONAZIONE",
+        "lead": "Tutte le donazioni sono benvenute per contribuire a coprire i costi della manifestazione. Grazie per indicare la nota «klimademo» al momento della donazione.",
+        "details": [
+            "<b>Unsere Kontoangaben:</b>",
+            "Alternative Bank Schweiz,",
+            "4601 Olten",
+            "Konto-Nr. 367.696.100-00",
+            "IBAN: CH41 0839 0036 7696 1000 0",
+            "BIC: ABSOCH22",
+            "Klima-Allianz Schweiz, Rue Fendt 1,",
+            "1201 Genf"
+        ]
     }
 }
