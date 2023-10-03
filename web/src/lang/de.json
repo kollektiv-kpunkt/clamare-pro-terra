@@ -348,5 +348,19 @@
             "agriculture": "Landwirtschaft"
         },
         "all_speeches": "Alle Reden"
+    },
+    "donatepage": {
+        "title": "Unterstütze uns mit einer Spende",
+        "lead": "Wir sind dankbar über Spenden, um die Ausgaben für die Klimademo decken zu können. Bitte gebt bei den Spenden den Vermerk “Klimademo” an.",
+        "details": [
+            "<b>Unsere Kontoangaben:</b>",
+            "Alternative Bank Schweiz,",
+            "4601 Olten",
+            "Konto-Nr. 367.696.100-00",
+            "IBAN: CH41 0839 0036 7696 1000 0",
+            "BIC: ABSOCH22",
+            "Klima-Allianz Schweiz, Rue Fendt 1,",
+            "1201 Genf"
+        ]
     }
 }
